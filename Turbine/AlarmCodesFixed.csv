@@ -1,0 +1,1288 @@
+﻿Alarm Code,Description,Count
+1," ""WTC Cycle Time Overrun""",0
+2," ""WTC Cycle Time Serious Overrun""",0
+3," ""Controller Call Period Mismatch""",0
+4," ""Controller Call Period Too Long""",0
+5," ""Controller Call Period Too Short""",0
+6," ""Cold Boot happened. All channels reinitialised.""",0
+7," ""Warm Boot""",0
+8," ""Start Up PCS Grid Connection Time Out""",0
+9," ""Start Up Synching Speed Time Out""",0
+10," ""Start Up Rotor Position Encoder Time Out""",0
+11," ""Controller Task Stack Usage Critical""",0
+12," ""Scada Shutdown Request""",0
+13," ""Shutdown Cycling""",0
+14," ""Ss Nacelle E Stop Pressed""",0
+15," ""Ss Yaw E Stop Pressed""",0
+16," ""Ss Rotor Lock Panel E Stop Pressed""",0
+17," ""Ss TowerBox EStop Pressed""",0
+18," ""Ss PCS E Stop Pressed""",0
+19," ""Ss Cable Twist Cw""",0
+20," ""Ss Cable Twist Ccw""",0
+21," ""Ss Watchdog Trip""",0
+22," ""Ss Vibration Trip""",0
+23," ""Ss Rotor Over Speed Trip""",0
+24," ""Ss Over Power Trip""",0
+25," ""Ss Short Circuit Trip""",0
+26," ""Ss Controller Initiated Turbine Trip""",0
+27," ""Ss Personnel Level Trip""",0
+28," ""Ss Yaw Level Trip""",0
+29," ""Ss Turbine Level Trip""",0
+30," ""Nacelle EStop Safety PLC / WTC mismatch""",0
+31," ""Yaw EStop Safety PLC / WTC mismatch""",0
+32," ""RLCP EStop Safety PLC / WTC mismatch""",0
+33," ""TowerBox EStop Safety PLC / WTC mismatch""",0
+34," ""PCS EStop Safety PLC / WTC mismatch""",0
+35," ""Cable twist limit CW Safety PLC / WTC mismatch""",0
+36," ""Cable twist limit CCW Safety PLC / WTC mismatch""",0
+37," ""Watchdog Safety PLC / WTC mismatch""",0
+38," ""Vibration Safety PLC / WTC mismatch""",0
+39," ""Overspeed Safety PLC / WTC mismatch""",0
+40," ""Overpower Safety PLC / WTC mismatch""",0
+41," ""Short Circuit Safety PLC / WTC mismatch""",0
+42," ""Rotor Underspeed Misconfigured""",0
+43," ""Personnel Ss Failed To Trip""",0
+44," ""Yaw Ss Failed To Trip""",0
+45," ""Turbine Ss Failed To Trip""",0
+46," ""Remote Switch Manual""",0
+47," ""Nacelle Key Switch Manual""",0
+48," ""Tower Base Key Switch Manual""",0
+49," ""Nacelle Key Switch Off""",0
+50," ""Tower Base Key Switch Off""",0
+51," ""Grid Failure""",0
+52," ""Over Power""",0
+53," ""Inst High Wind Speed Shutdown""",0
+54," ""High Wind Speed Shutdown""",0
+55,Wind Speed Transducer Error 1&2,0
+56,Wind Speed Transducer Error 2&3,0
+57,Wind Speed Transducer Error 1&3,0
+58," ""Wind Speed Transducers Disabled""",0
+59," ""Wind Speed Disabled Transducer Selected""",0
+60," ""Wind Speed 1 Unchanged""",0
+61," ""Wind Speed 2 Unchanged""",0
+62," ""Wind Speed 3 Unchanged""",0
+63,Wind Direction Transducer Error 1&2,0
+64,Wind Direction Transducer Error 2&3,0
+65,Wind Direction Transducer Error 1&3,0
+66," ""Wind Speed Transducers Disabled""",0
+67," ""Wind Direction Disabled Transducer Selected""",0
+68," ""Wind Spd Without Active Yaw Err""",0
+69," ""Vibration Without Wind Change""",0
+70," ""Wind Speed Below Cut In""",0
+71," ""Wind Speed Above Max Start""",0
+72," ""Wind Speed Not Appropriate For Startup""",0
+73," ""Rotor Position Not Valid Yet""",0
+74," ""Rotor Underspeed In Startup""",0
+75," ""Software Under Speed""",0
+76," ""Sw Underpower During Production""",0
+77," ""Sw Over Speed On Start Up""",0
+78," ""Sw Over Speed Waiting For Wind""",0
+79," ""Manual Generator Over Speed""",0
+80," ""(DEMOTED) Manual Rotor Over Speed""",0
+81," ""(DEMOTED) Transmission Speed Mismatch""",0
+82," ""Instantaneous Gen Speed Step""",0
+83," ""Unchanged Producing Gen Speed""",0
+84," ""Gen Accelerating in Batt Shutdn""",0
+85," ""Torque Mismatch""",0
+86," ""Measured Electrical Power Out Of Range""",0
+87," ""Active Power Measurement Mismatch""",0
+88," ""PCS Comms Heartbeat Lost""",0
+89," ""PCS System Fault Reset TimeOut""",0
+90," ""PCS Short Circuit Trip""",0
+91," ""PCS State Time Out""",0
+92," ""PCS State Mismatch""",0
+93," ""(DEMOTED) Mismatch Between Rotor And Generator Speeds""",0
+94," ""(DEMOTED) Yaw Encoder Mismatch""",0
+95," ""Yaw 90 Requested from Scada""",0
+96," ""Yaw 90 switch latched on""",0
+97,Yaw Error > Max Start Yaw Error,0
+98," ""Software Cable Twist CW""",0
+99," ""Software Cable Twist CCW""",0
+100," ""Cable Unwind""",0
+101," ""Yaw Disabled""",0
+102," ""Yaw Disabled in Auto""",0
+103," ""Yaw move unexpected""",0
+104," ""Yaw moving too fast""",0
+105," ""Yaw Move In Wrong Direction""",0
+106," ""Yaw Failed to Move""",0
+107," ""Yaw Drives Disabled""",0
+108," ""Yaw Drives Fault""",0
+109," ""Yaw Drives Manual Clear Fault""",0
+110," ""Yaw Drive Main Contactor Off""",0
+111," ""Yaw Drive 1 fault require manual clearing""",0
+112," ""failure to reset the yaw drive 1""",0
+113," ""(DEMOTED) Yaw Inverter 1 Speed Mismatch""",0
+114," ""Yaw Drive 1 Alarm Word 1 BIT_00""",0
+115," ""Yaw Drive 1 Alarm Word 1 BIT_01""",0
+116," ""Yaw Drive 1 Alarm Word 1 BIT_02""",0
+117," ""Yaw Drive 1 Alarm Word 1 BIT_03""",0
+118," ""Yaw Drive 1 Alarm Word 1 BIT_04""",0
+119," ""Yaw Drive 1 Alarm Word 1 BIT_05""",0
+120," ""Yaw Drive 1 Alarm Word 1 BIT_06""",0
+121," ""Yaw Drive 1 Alarm Word 1 BIT_07""",0
+122," ""Yaw Drive 1 Alarm Word 1 BIT_08""",0
+123," ""Yaw Drive 1 Alarm Word 1 BIT_09""",0
+124," ""Yaw Drive 1 Alarm Word 1 BIT_10""",0
+125," ""Yaw Drive 1 Alarm Word 1 BIT_11""",0
+126," ""Yaw Drive 1 Alarm Word 1 BIT_12""",0
+127," ""Yaw Drive 1 Alarm Word 1 BIT_13""",0
+128," ""Yaw Drive 1 Alarm Word 1 BIT_14""",0
+129," ""Yaw Drive 1 Alarm Word 1 BIT_15""",0
+130," ""Yaw Drive 1 Alarm Word 2 BIT_00""",0
+131," ""Yaw Drive 1 Alarm Word 2 BIT_01""",0
+132," ""Yaw Drive 1 Alarm Word 2 BIT_02""",0
+133," ""Yaw Drive 1 Alarm Word 2 BIT_03""",0
+134," ""Yaw Drive 1 Alarm Word 2 BIT_04""",0
+135," ""Yaw Drive 1 Alarm Word 2 BIT_05""",0
+136," ""Yaw Drive 1 Alarm Word 2 BIT_06""",0
+137," ""Yaw Drive 1 Alarm Word 2 BIT_07""",0
+138," ""Yaw Drive 1 Alarm Word 2 BIT_08""",0
+139," ""Yaw Drive 1 Alarm Word 2 BIT_09""",0
+140," ""Yaw Drive 1 Alarm Word 2 BIT_10""",0
+141," ""Yaw Drive 1 Alarm Word 2 BIT_11""",0
+142," ""Yaw Drive 1 Alarm Word 2 BIT_12""",0
+143," ""Yaw Drive 1 Alarm Word 2 BIT_13""",0
+144," ""Yaw Drive 1 Alarm Word 2 BIT_14""",0
+145," ""Yaw Drive 1 Alarm Word 2 BIT_15""",0
+146," ""Yaw Drive 1 Alarm Word 3 BIT_00""",0
+147," ""Yaw Drive 1 Alarm Word 3 BIT_01""",0
+148," ""Yaw Drive 1 Alarm Word 3 BIT_02""",0
+149," ""Yaw Drive 1 Alarm Word 3 BIT_03""",0
+150," ""Yaw Drive 1 Alarm Word 3 BIT_04""",0
+151," ""Yaw Drive 1 Alarm Word 3 BIT_05""",0
+152," ""Yaw Drive 1 Alarm Word 3 BIT_06""",0
+153," ""Yaw Drive 1 Alarm Word 3 BIT_07""",0
+154," ""Yaw Drive 1 Alarm Word 3 BIT_08""",0
+155," ""Yaw Drive 1 Alarm Word 3 BIT_09""",0
+156," ""Yaw Drive 1 Alarm Word 3 BIT_10""",0
+157," ""Yaw Drive 1 Alarm Word 3 BIT_11""",0
+158," ""Yaw Drive 1 Alarm Word 3 BIT_12""",0
+159," ""Yaw Drive 1 Alarm Word 3 BIT_13""",0
+160," ""Yaw Drive 1 Alarm Word 3 BIT_14""",0
+161," ""Yaw Drive 1 Alarm Word 3 BIT_15""",0
+162," ""Yaw Drive 1 Alarm Word 4 BIT_00""",0
+163," ""Yaw Drive 1 Alarm Word 4 BIT_01""",0
+164," ""Yaw Drive 1 Alarm Word 4 BIT_02""",0
+165," ""Yaw Drive 1 Alarm Word 4 BIT_03""",0
+166," ""Yaw Drive 1 Alarm Word 4 BIT_04""",0
+167," ""Yaw Drive 1 Alarm Word 4 BIT_05""",0
+168," ""Yaw Drive 1 Alarm Word 4 BIT_06""",0
+169," ""Yaw Drive 1 Alarm Word 4 BIT_07""",0
+170," ""Yaw Drive 1 Alarm Word 4 BIT_08""",0
+171," ""Yaw Drive 1 Alarm Word 4 BIT_09""",0
+172," ""Yaw Drive 1 Alarm Word 4 BIT_10""",0
+173," ""Yaw Drive 1 Alarm Word 4 BIT_11""",0
+174," ""Yaw Drive 1 Alarm Word 4 BIT_12""",0
+175," ""Yaw Drive 1 Alarm Word 4 BIT_13""",0
+176," ""Yaw Drive 1 Alarm Word 4 BIT_14""",0
+177," ""Yaw Drive 1 Alarm Word 4 BIT_15""",0
+178," ""Yaw Drive 2 fault require manual clearing""",0
+179," ""failure to reset the yaw drive 2""",0
+180," ""(DEMOTED) Yaw Inverter 2 Speed Mismatch""",0
+181," ""Yaw Drive 2 Alarm Word 1 BIT_00""",0
+182," ""Yaw Drive 2 Alarm Word 1 BIT_01""",0
+183," ""Yaw Drive 2 Alarm Word 1 BIT_02""",0
+184," ""Yaw Drive 2 Alarm Word 1 BIT_03""",0
+185," ""Yaw Drive 2 Alarm Word 1 BIT_04""",0
+186," ""Yaw Drive 2 Alarm Word 1 BIT_05""",0
+187," ""Yaw Drive 2 Alarm Word 1 BIT_06""",0
+188," ""Yaw Drive 2 Alarm Word 1 BIT_07""",0
+189," ""Yaw Drive 2 Alarm Word 1 BIT_08""",0
+190," ""Yaw Drive 2 Alarm Word 1 BIT_09""",0
+191," ""Yaw Drive 2 Alarm Word 1 BIT_10""",0
+192," ""Yaw Drive 2 Alarm Word 1 BIT_11""",0
+193," ""Yaw Drive 2 Alarm Word 1 BIT_12""",0
+194," ""Yaw Drive 2 Alarm Word 1 BIT_13""",0
+195," ""Yaw Drive 2 Alarm Word 1 BIT_14""",0
+196," ""Yaw Drive 2 Alarm Word 1 BIT_15""",0
+197," ""Yaw Drive 2 Alarm Word 2 BIT_00""",0
+198," ""Yaw Drive 2 Alarm Word 2 BIT_01""",0
+199," ""Yaw Drive 2 Alarm Word 2 BIT_02""",0
+200," ""Yaw Drive 2 Alarm Word 2 BIT_03""",0
+201," ""Yaw Drive 2 Alarm Word 2 BIT_04""",0
+202," ""Yaw Drive 2 Alarm Word 2 BIT_05""",0
+203," ""Yaw Drive 2 Alarm Word 2 BIT_06""",0
+204," ""Yaw Drive 2 Alarm Word 2 BIT_07""",0
+205," ""Yaw Drive 2 Alarm Word 2 BIT_08""",0
+206," ""Yaw Drive 2 Alarm Word 2 BIT_09""",0
+207," ""Yaw Drive 2 Alarm Word 2 BIT_10""",0
+208," ""Yaw Drive 2 Alarm Word 2 BIT_11""",0
+209," ""Yaw Drive 2 Alarm Word 2 BIT_12""",0
+210," ""Yaw Drive 2 Alarm Word 2 BIT_13""",0
+211," ""Yaw Drive 2 Alarm Word 2 BIT_14""",0
+212," ""Yaw Drive 2 Alarm Word 2 BIT_15""",0
+213," ""Yaw Drive 2 Alarm Word 3 BIT_00""",0
+214," ""Yaw Drive 2 Alarm Word 3 BIT_01""",0
+215," ""Yaw Drive 2 Alarm Word 3 BIT_02""",0
+216," ""Yaw Drive 2 Alarm Word 3 BIT_03""",0
+217," ""Yaw Drive 2 Alarm Word 3 BIT_04""",0
+218," ""Yaw Drive 2 Alarm Word 3 BIT_05""",0
+219," ""Yaw Drive 2 Alarm Word 3 BIT_06""",0
+220," ""Yaw Drive 2 Alarm Word 3 BIT_07""",0
+221," ""Yaw Drive 2 Alarm Word 3 BIT_08""",0
+222," ""Yaw Drive 2 Alarm Word 3 BIT_09""",0
+223," ""Yaw Drive 2 Alarm Word 3 BIT_10""",0
+224," ""Yaw Drive 2 Alarm Word 3 BIT_11""",0
+225," ""Yaw Drive 2 Alarm Word 3 BIT_12""",0
+226," ""Yaw Drive 2 Alarm Word 3 BIT_13""",0
+227," ""Yaw Drive 2 Alarm Word 3 BIT_14""",0
+228," ""Yaw Drive 2 Alarm Word 3 BIT_15""",0
+229," ""Yaw Drive 2 Alarm Word 4 BIT_00""",0
+230," ""Yaw Drive 2 Alarm Word 4 BIT_01""",0
+231," ""Yaw Drive 2 Alarm Word 4 BIT_02""",0
+232," ""Yaw Drive 2 Alarm Word 4 BIT_03""",0
+233," ""Yaw Drive 2 Alarm Word 4 BIT_04""",0
+234," ""Yaw Drive 2 Alarm Word 4 BIT_05""",0
+235," ""Yaw Drive 2 Alarm Word 4 BIT_06""",0
+236," ""Yaw Drive 2 Alarm Word 4 BIT_07""",0
+237," ""Yaw Drive 2 Alarm Word 4 BIT_08""",0
+238," ""Yaw Drive 2 Alarm Word 4 BIT_09""",0
+239," ""Yaw Drive 2 Alarm Word 4 BIT_10""",0
+240," ""Yaw Drive 2 Alarm Word 4 BIT_11""",0
+241," ""Yaw Drive 2 Alarm Word 4 BIT_12""",0
+242," ""Yaw Drive 2 Alarm Word 4 BIT_13""",0
+243," ""Yaw Drive 2 Alarm Word 4 BIT_14""",0
+244," ""Yaw Drive 2 Alarm Word 4 BIT_15""",0
+245," ""Low Outside Air Temperature""",0
+246," ""Low Outside Air Temperature Shutdown""",0
+247," ""High Outside Air Temperature""",0
+248," ""High Outside Air Temperature Shutdown""",0
+249," ""High Nacelle Air Temperature Warning""",0
+250," ""High Nacelle Air Temperature Shutdown""",0
+251," ""High Control Cabinet Temperature Shutdown""",0
+252," ""Outside Air temperature sensors disagree""",0
+253," ""Calibrations Are Disabled""",0
+254," ""Basic Tracing Disabled""",0
+255," ""Test Mode Enabled""",0
+256," ""File Writing Suspended""",0
+257," ""Log Data Rate Too High""",0
+258," ""Log Writing Failed""",0
+259," ""Trip Log Writing Failed""",0
+260," ""Pitch Log File Size Too Small""",0
+261," ""Stats Log File Size Too Small""",0
+262," ""Trip Log Files Too Big""",0
+263," ""Trip Log Configuration Error""",0
+264," ""TraceTask Watchdog Trip""",0
+265," ""(DEMOTED) FileOperationsTask Watchdog Trip""",0
+266," ""Trace Message Queue Overflow""",0
+267," ""Channels Update Queue Overflow""",0
+268," ""Alarm log queue full""",0
+269," ""(DEMOTED) Pitch log queue full""",0
+270," ""State log queue full""",0
+271," ""Stats log queue full""",0
+272," ""Trip log queue full""",0
+273," ""(DEMOTED) Persistent data queue full""",0
+274," ""A_TestRL""",0
+275," ""A_TestRW""",0
+276," ""A_TestRI""",0
+277," ""A_TestRN""",0
+278," ""A_TestRF""",0
+279," ""A_TestRG""",0
+280," ""A_TestRP""",0
+281," ""A_TestRM""",0
+282," ""A_TestRET""",0
+283," ""A_TestRE""",0
+284," ""Hydraulic 1 Oil Level Low""",0
+285," ""Hydraulic 2 Oil Level Low""",0
+286," ""(DEMOTED) Yaw Hydraulic Pressure Diff Too Large""",0
+287," ""HPU 1 pressure is too high""",0
+288," ""HPU 2 pressure is too high""",0
+289," ""HPU 1 Pump Active For Too Long""",0
+290," ""HPU 2 Pump Active For Too Long""",0
+291," ""Yaw Brake 1 Failed To Release""",0
+292," ""(DEMOTED) Yaw Brake 1 Under Pressure Reduced Brake""",0
+293," ""(DEMOTED) Yaw Brake 1 Under Pressure Full Brake""",0
+294," ""(DEMOTED) Yaw Brake 1 Over Pressure Reduced Brake""",0
+295," ""Yaw Brake 1 Over Pressure Full Brake""",0
+296," ""Yaw Brake 2 Failed To Release""",0
+297," ""(DEMOTED) Yaw Brake 2 Under Pressure Reduced Brake""",0
+298," ""(DEMOTED) Yaw Brake 2 Under Pressure Full Brake""",0
+299," ""(DEMOTED) Yaw Brake 2 Over Pressure Reduced Brake""",0
+300," ""Yaw Brake 2 Over Pressure Full Brake""",0
+301," ""Hss Rotor Brake 1 Applied""",0
+302," ""Hss Brake 1 Failed To Apply""",0
+303," ""Hss Brake 1 Over-Pressure""",0
+304," ""Hss Rotor Brake 2 Applied""",0
+305," ""Hss Brake 2 Failed To Apply""",0
+306," ""Hss Brake 2 Over-Pressure""",0
+307," ""Rotor Lock Pin 1 Engaged""",0
+308," ""Rotor Lock Pin 2 Engaged""",0
+309," ""Rotor Lock Pin 1 Released""",0
+310," ""Rotor Lock Pin 2 Released""",0
+311," ""Rotor Lock Pin 1 NoFeedback""",0
+312," ""Rotor Lock Pin 2 NoFeedback""",0
+313," ""Rotor Lock Pin 1 MissMatch""",0
+314," ""Rotor Lock Pin 2 MissMatch""",0
+315," ""Inst Fore-Aft Vib High""",0
+316," ""Inst Fore-Aft Vib Too High""",0
+317," ""Inst High Side-Side Vib""",0
+318," ""Inst High Side-Side Vib""",0
+319," ""Inst Gearbox Vib Too High""",0
+320," ""Ave Fore-Aft Vib Too High""",0
+321," ""Ave Side-Side Vib Too High""",0
+322," ""Ave Gearbox Vib Too High""",0
+323," ""Unexpected Vib Self Test Active""",0
+324," ""Vib Self Test Failed""",0
+325," ""2 fore aft accelerometers disagree""",0
+326," ""Vibration monitor no new data""",0
+327," ""Alert Alarm active for Band1""",0
+328," ""Alert Alarm active for Band2""",0
+329," ""Alert Alarm active for Band3""",0
+330," ""Alert Alarm active for Band4""",0
+331," ""Alert Alarm active for Band5""",0
+332," ""Alert Alarm active for Band6""",0
+333," ""Alert Alarm active for Band7""",0
+334," ""Alert Alarm active for Band8""",0
+335," ""Alert Alarm active for Band9""",0
+336," ""Alert Alarm active for Band10""",0
+337," ""Alert Alarm active for Band11""",0
+338," ""Alert Alarm active for Band12""",0
+339," ""Danger Alarm active for Band1""",0
+340," ""Danger Alarm active for Band2""",0
+341," ""Danger Alarm active for Band3""",0
+342," ""Danger Alarm active for Band4""",0
+343," ""Danger Alarm active for Band5""",0
+344," ""Danger Alarm active for Band6""",0
+345," ""Danger Alarm active for Band7""",0
+346," ""Danger Alarm active for Band8""",0
+347," ""Danger Alarm active for Band9""",0
+348," ""Danger Alarm active for Band10""",0
+349," ""Danger Alarm active for Band11""",0
+350," ""Danger Alarm active for Band12""",0
+351," ""PCH Band 1 vibration warning""",0
+352," ""PCH Band 2 vibration warning""",0
+353," ""PCH Band 3 vibration warning""",0
+354," ""PCH Band 4 vibration warning""",0
+355," ""PCH Band 5 vibration warning""",0
+356," ""PCH Band 6 vibration warning""",0
+357," ""PCH Band 7 vibration warning""",0
+358," ""PCH Band 8 vibration warning""",0
+359," ""PCH Band 9 vibration warning""",0
+360," ""PCH Band 10 vibration warning""",0
+361," ""PCH Band 11 vibration warning""",0
+362," ""PCH Band 12 vibration warning""",0
+363," ""PCH Band 1 vibration too high""",0
+364," ""PCH Band 2 vibration too high""",0
+365," ""PCH Band 3 vibration too high""",0
+366," ""PCH Band 4 vibration too high""",0
+367," ""PCH Band 5 vibration too high""",0
+368," ""PCH Band 6 vibration too high INFORM HAMBURG OFFICE""",0
+369," ""PCH Band 7 vibration too high""",0
+370," ""PCH Band 8 vibration too high""",0
+371," ""PCH Band 9 vibration too high""",0
+372," ""PCH Band 10 vibration too high""",0
+373," ""PCH Band 11 vibration too high""",0
+374," ""PCH Band 12 vibration too high""",0
+375," ""Pitch Battery Shutdown""",0
+376," ""Pitch Fast Shutdown Too Slow 1""",0
+377," ""Pitch Fast Shutdown Too Slow 2""",0
+378," ""Pitch Fast Shutdown Too Slow 3""",0
+379," ""Pitch Not At Feather""",0
+380," ""(DEMOTED) Pitch Demand 1 and 2 Differ""",0
+381," ""(DEMOTED) Pitch Demand 2 and 3 Differ""",0
+382," ""(DEMOTED) Pitch Demand 1 and 3 Differ""",0
+383," ""Wind Speed Inhibit Pitch Battery Test""",0
+384," ""Pitch Battery Test Requested""",0
+385," ""Pitch Battery Test Request Timeout""",0
+386," ""Pitch Battery Test Manual Interruption""",0
+387," ""Pitch Battery Test Inhibit Auto Startup""",0
+388," ""Pitch Battery Test Failed""",0
+389," ""Can Perform Pitch Battery Test""",0
+390," ""Must Perform Pitch Battery Test""",0
+391," ""Blade 1 too slow during EFC""",0
+392," ""Blade 2 too slow during EFC""",0
+393," ""Blade 3 too slow during EFC""",0
+394," ""Blade 1 too fast during EFC""",0
+395," ""Blade 2 too fast during EFC""",0
+396," ""Blade 3 too fast during EFC""",0
+397," ""Blade 1 too slow to respond""",0
+398," ""Blade 2 too slow to respond""",0
+399," ""Blade 3 too slow to respond""",0
+400," ""EFC Failure Abnormal Pitch Rate 1""",0
+401," ""EFC Failure Abnormal Pitch Rate 2""",0
+402," ""EFC Failure Abnormal Pitch Rate 3""",0
+403," ""Emergency Feather Failure Detected""",0
+404," ""Pitch Second LS Touched But Not First LS 11""",0
+405," ""Pitch Second LS Touched But Not First LS 12""",0
+406," ""Pitch Second LS Touched But Not First LS 13""",0
+407," ""Pitch No Backup Power Not At Feather 11""",0
+408," ""Pitch No Backup Power Not At Feather 12""",0
+409," ""Pitch No Backup Power Not At Feather 13""",0
+410," ""Pitch Heartbeat Error""",0
+411," ""Pitch Encoder Mismatch 11""",0
+412," ""Pitch Encoder Mismatch 12""",0
+413," ""(DEMOTED) Pitch Encoder Mismatch 13""",0
+414," ""Pitch Encoder Mismatch 21""",0
+415," ""Pitch Encoder Mismatch 22""",0
+416," ""Pitch Encoder Mismatch 23""",0
+417," ""Pitch Motor Encoder Mismatch Axis 1""",0
+418," ""Pitch Motor Encoder Mismatch Axis 2""",0
+419," ""Pitch Motor Encoder Mismatch Axis 3""",0
+420," ""Pitch Blade Encoder Mismatch Axis 1""",0
+421," ""Pitch Blade Encoder Mismatch Axis 2""",0
+422," ""(DEMOTED) Pitch Blade Encoder Mismatch Axis 3""",0
+423," ""Pitch Limit Switch Error Off 1""",0
+424," ""Pitch Limit Switch Error Off 2""",0
+425," ""Pitch Limit Switch Error Off 3""",0
+426," ""Pitch Limit Switch Error On 1""",0
+427," ""Pitch Limit Switch Error On 2""",0
+428," ""Pitch Limit Switch Error On 3""",0
+429," ""Pitch Backup Limit Error Off 1""",0
+430," ""Pitch Backup Limit Error Off 2""",0
+431," ""Pitch Backup Limit Error Off 3""",0
+432," ""Pitch Backup Limit Error On 1""",0
+433," ""Pitch Backup Limit Error On 2""",0
+434," ""Pitch Backup Limit Error On 3""",0
+435," ""Pitch System Fatal Error""",0
+436," ""Pitch System Critical Error""",0
+437," ""Pitch System Autonomous Feather""",0
+438," ""Pitch System Master Error""",0
+439," ""Pitch System Fault Reset TimeOut""",0
+440," ""Pitch System Fatal Error Not Recognised""",0
+441," ""Pitch System Critical Error Not Recognised""",0
+442," ""Pitch System Fatal Error Is Incorrectly Defined""",0
+443," ""Pitch System Critical Error Is Incorrectly Defined""",0
+444," ""IPC Loads Sensor Failure""",0
+445," ""(DEMOTED) Oem Loads Comms Time Out""",0
+446," ""Oem Loads Voltage Low""",0
+447," ""Oem Loads Voltage High""",0
+448," ""Oem Loads Power Supply Fault""",0
+449," ""Oem Temp Sensor Fault""",0
+450," ""Oem Temp Too Low""",0
+451," ""Oem Temp Too High""",0
+452," ""Oem Humidity Too Low""",0
+453," ""Oem Humidity Too High""",0
+454," ""Oem Blade Loads Fault""",0
+455," ""(DEMOTED) IPC My Loads Blade1 Optical failure""",0
+456," ""(DEMOTED) IPC Mx Loads Blade1 Optical failure""",0
+457," ""(DEMOTED) IPC My Loads Blade2 Optical failure""",0
+458," ""(DEMOTED) IPC Mx Loads Blade2 Optical failure""",0
+459," ""(DEMOTED) IPC My Loads Blade3 Optical failure""",0
+460," ""(DEMOTED) IPC Mx Loads Blade3 Optical failure""",0
+461," ""Blade1 Loads Temp sensor1 failure""",0
+462," ""Blade1 Loads Temp sensor2 failure""",0
+463," ""Blade1 Loads Temp sensor3 failure""",0
+464," ""Blade1 Loads Temp sensor4 failure""",0
+465," ""Blade2 Loads Temp sensor1 failure""",0
+466," ""Blade2 Loads Temp sensor2 failure""",0
+467," ""Blade2 Loads Temp sensor3 failure""",0
+468," ""Blade2 Loads Temp sensor4 failure""",0
+469," ""Blade3 Loads Temp sensor1 failure""",0
+470," ""Blade3 Loads Temp sensor2 failure""",0
+471," ""Blade3 Loads Temp sensor3 failure""",0
+472," ""Blade3 Loads Temp sensor4 failure""",0
+473," ""(DEMOTED) Env Loads Comms Time Out""",0
+474," ""Env Loads Voltage Low""",0
+475," ""Env Loads Voltage High""",0
+476," ""Env Loads Power Supply Fault""",0
+477," ""Env Temp Sensor Fault""",0
+478," ""Env Temp Too Low""",0
+479," ""Env Temp Too High""",0
+480," ""Env Humidity Too Low""",0
+481," ""Env Humidity Too High""",0
+482," ""Speed Control Mode Requested""",0
+483," ""Speed Control Request Timeout""",0
+484," ""Speed Control Max Duration Exceeded""",0
+485," ""Speed Control Inhibit Auto Startup""",0
+486," ""Speed Control Stop Request""",0
+487," ""Generator Stator Temp High Warning""",0
+488," ""Generator Stator Temp High Shutdown""",0
+489," ""Generator Bearing DE Temp Warning""",0
+490," ""Generator Bearing DE Temp Shutdown""",0
+491," ""Generator Bearing NDE Temp Warning""",0
+492," ""Generator Bearing NDE Temp Shutdown""",0
+493," ""Generator Inlet Temp Warning""",0
+494," ""Generator Inlet Temp Shutdown""",0
+495," ""Generator Outlet Temp Warning""",0
+496," ""Generator Outlet Temp Shutdown""",0
+497," ""Generator Leakage Detected""",0
+498," ""Generator Internal Air DE Temp Warning""",0
+499," ""Generator Internal Air DE Temp Shutdown""",0
+500," ""Generator Internal Air NDE Temp Warning""",0
+501," ""Generator Internal Air NDE Temp Shutdown""",0
+502," ""Generator Internal Air Mid Temp Warning""",0
+503," ""Generator Internal Air Mid Temp Shutdown""",0
+504," ""MVTR Winding Temperatures Warning""",0
+505," ""MVTR Winding Temperatures Shutdown""",0
+506," ""MVTR Input Air Temp Warning""",0
+507," ""MVTR Input Air Temp Shutdown""",0
+508," ""MVTR Output Air Temp Warning""",0
+509," ""MVTR Output Air Temp Shutdown""",0
+510," ""MVTR Leakage Detected""",0
+511," ""MVTR Cooling Pumps Overload Warning""",0
+512," ""(DEMOTED) MVTR Cooling Pumps Overload Shutdown""",0
+513," ""MVTR Fans Overloaded""",0
+514," ""MVTR Cooling Water Pressure Warning""",0
+515," ""(DEMOTED) MVTR Cooling Water Pressure Shutdown""",0
+516," ""Aux Transformer Winding Temperatures Warning""",0
+517," ""Aux Transformer Winding Temperatures Shutdown""",0
+518," ""HPU Oil Temp 1 High""",0
+519," ""HPU Oil Temp 2 High""",0
+520," ""HPU 1 Pump Too Frequent""",0
+521," ""HPU 2 Pump Too Frequent""",0
+522," ""HPU 1 Pump Too Frequent While Yawing""",0
+523," ""HPU 2 Pump Too Frequent While Yawing""",0
+524," ""HPU Filter 1 Clogged""",0
+525," ""HPU Filter 2 Clogged""",0
+526," ""HPU Rotor Brake Pressure 1 Warning""",0
+527," ""HPU Rotor Brake Pressure 1 Critical""",0
+528," ""HPU Rotor Brake Pressure 2 Warning""",0
+529," ""HPU Rotor Brake Pressure 2 Critical""",0
+530," ""HPU Yaw Brake Pressure 1 Warning""",0
+531," ""HPU Yaw Brake Pressure 2 Warning""",0
+532," ""HPU Rotor Brake Pressure 1 Vague""",0
+533," ""HPU Rotor Brake Pressure 2 Vague""",0
+534," ""Rotor Brake Pad 1 Pre Worn""",0
+535," ""Rotor Brake Pad 2 Pre Worn""",0
+536," ""Rotor Brake Pad 3 Pre Worn""",0
+537," ""Rotor Brake Pad 4 Pre Worn""",0
+538," ""Rotor Brake Pad 1 Worn""",0
+539," ""Rotor Brake Pad 2 Worn""",0
+540," ""Rotor Brake Pad 3 Worn""",0
+541," ""Rotor Brake Pad 4 Worn""",0
+542," ""Gearbox Cooling Line Pressure Low""",0
+543," ""Gearbox Cooling Line Pressure Too Low""",0
+544," ""Gearbox Cooling Pump Overload Warning""",0
+545," ""Gearbox Cooling Pump Overload Shutdown""",0
+546," ""Gearbox Oil Tank 1 Level Low""",0
+547," ""(DEMOTED) Gearbox Oil Tank 1 Level Too Low""",0
+548," ""Gearbox Oil Tank 2 Level Low""",0
+549," ""(DEMOTED) Gearbox Oil Tank 2 Level Too Low""",0
+550," ""Gearbox Oil Tank 1 Level Warning""",0
+551," ""(DEMOTED) Gearbox Oil Tank 1 Level Shutdown""",0
+552," ""Gearbox Oil Tank 2 Level Warning""",0
+553," ""(DEMOTED) Gearbox Oil Tank 2 Level Shutdown""",0
+554," ""Gearbox Min Oil Level Shutdown""",0
+555," ""Gearbox Oil Tank 1 Temp Warning""",0
+556," ""Gearbox Oil Tank 1 Temp Shutdown""",0
+557," ""Gearbox Oil Tank 2 Temp Warning""",0
+558," ""Gearbox Oil Tank 2 Temp Shutdown""",0
+559," ""Gearbox Filter Pressure 1 Warning""",0
+560," ""Gearbox Filter Pressure 1 Shutdown""",0
+561," ""Gearbox Filter Pressure 2 Warning""",0
+562," ""Gearbox Filter Pressure 2 Shutdown""",0
+563," ""Gearbox Filter Pressure 3 Warning""",0
+564," ""Gearbox Filter Pressure 3 Shutdown""",0
+565," ""Gearbox Filter Pressure 4 Warning""",0
+566," ""Gearbox Filter Pressure 4 Shutdown""",0
+567," ""Gearbox Filter Manifold Pressure 1 Warning""",0
+568," ""(DEMOTED) Gearbox Filter Manifold Pressure 1 Shutdown""",0
+569," ""Gearbox Filter Manifold Pressure 2 Warning""",0
+570," ""(DEMOTED) Gearbox Filter Manifold Pressure 2 Shutdown""",0
+571," ""Gearbox Dist Temp 1 Warning""",0
+572," ""Gearbox Dist Temp 1 Shutdown""",0
+573," ""Gearbox Dist Temp 2 Warning""",0
+574," ""Gearbox Dist Temp 2 Shutdown""",0
+575," ""Gearbox Dist Pressure 1 Warning""",0
+576," ""Gearbox Dist Pressure 1 Shutdown""",0
+577," ""Gearbox Dist Pressure 2 Warning""",0
+578," ""Gearbox Dist Pressure 2 Shutdown""",0
+579," ""Gearbox Dist Pressure 3 Warning""",0
+580," ""Gearbox Dist Pressure 3 Shutdown""",0
+581," ""Gearbox Dist Pressure 4 Warning""",0
+582," ""Gearbox Dist Pressure 4 Shutdown""",0
+583," ""Gearbox Dist SP Lube Pressure Warning""",0
+584," ""Gearbox Dist SP Lube Pressure Shutdown""",0
+585," ""Gearbox Dist OP Bearing Lube Pressure Warning""",0
+586," ""Gearbox Dist OP Bearing Lube Pressure Shutdown""",0
+587," ""Gearbox Dist Main Bearing SP Pressure Warning""",0
+588," ""Gearbox Dist Main Bearing SP Pressure Shutdown""",0
+589," ""Gearbox Ext Oil Heater Press 1 Warning""",0
+590," ""Gearbox Ext Oil Heater Press 1 Shutdown""",0
+591," ""Gearbox Ext Oil Heater Press 2 Warning""",0
+592," ""Gearbox Ext Oil Heater Press 2 Shutdown""",0
+593," ""Gearbox Ext Heater Temp Warning""",0
+594," ""Gearbox Ext Heater Temp Shutdown""",0
+595," ""Gearbox 3rd Stage Bearing Temp 1 Warning""",0
+596," ""Gearbox 3rd Stage Bearing Temp 1 Shutdown""",0
+597," ""Gearbox OP Shaft Bearing Temp 1 Warning""",0
+598," ""Gearbox OP Shaft Bearing Temp 1 Shutdown""",0
+599," ""Gearbox OP Shaft Bearing Temp 2 Warning""",0
+600," ""Gearbox OP Shaft Bearing Temp 2 Shutdown""",0
+601," ""Gearbox EWS Contamination Sensor 2""",0
+602," ""Gearbox EWS Contamination Sensor 3""",0
+603," ""Nacelle Fan 1 Overload""",0
+604," ""Nacelle Fans Overloaded""",0
+605," ""Gen Cooling Water Pressure Warning""",0
+606," ""Gen Cooling Water Pressure Shutdown""",0
+607," ""Generator Cooling Pump Overload Warning""",0
+608," ""Generator Cooling Pump Overload Shutdown""",0
+609," ""PCS Cooling Tower Fans 1-5 Overloaded""",0
+610," ""(DEMOTED) IPR Comms Error""",0
+611," ""IPR Fault Fast Frequency Change""",0
+612," ""IPR 52 Braker Off""",0
+613," ""IPR 52 Braker On""",0
+614," ""IPR Disc Switch Off""",0
+615," ""IPR Disc Switch On""",0
+616," ""IPR Gnd Switch Off""",0
+617," ""IPR Gnd Switch On""",0
+618," ""IPR Chk Back Q2 Off""",0
+619," ""IPR Chk Back Q2 On""",0
+620," ""IPR Chk Back Q9 Off""",0
+621," ""IPR Chk Back Q9 On""",0
+622," ""IPR Error Sum Alarm""",0
+623," ""IPR Alarm Sum Event""",0
+624," ""IPR Relay Pick Up""",0
+625," ""IPR Relay Trip""",0
+626," ""IPR Cb Ready""",0
+627," ""IPR 50 51N Trip""",0
+628," ""IPR 502 Trip""",0
+629," ""IPR 501 Trip""",0
+630," ""IPR 51 Trip""",0
+631," ""IPR 50N2 Trip""",0
+632," ""IPR 50N1 Trip""",0
+633," ""IPR 51N Trip""",0
+634," ""IPR 811 TRIP""",0
+635," ""IPR 812 Trip""",0
+636," ""IPR 813 Trip""",0
+637," ""IPR 814 Trip""",0
+638," ""IPR 271 Trip""",0
+639," ""IPR 272 Trip""",0
+640," ""IPR 591 Trip""",0
+641," ""IPR Failure Current Sup""",0
+642," ""IPR Failure Current Sum""",0
+643," ""IPR Failure Phase Seq""",0
+644," ""IPR Meas Sup Off""",0
+645," ""IPR No Volt""",0
+646," ""IPR Test Mode""",0
+647," ""VibBand1Xreg""",0
+648," ""VibBand2Xreg""",0
+649," ""VibBand3Xreg""",0
+650," ""VibBand4Xreg""",0
+651," ""VibBand5Xreg""",0
+652," ""VibBand6Xreg""",0
+653," ""VibBand7Xreg""",0
+654," ""VibBand8Xreg""",0
+655," ""VibBand9Xreg""",0
+656," ""VibBand10Xreg""",0
+657," ""VibBand11Xreg""",0
+658," ""VibBand12Xreg""",0
+659," ""VibRaw1Xreg""",0
+660," ""VibRaw2Xreg""",0
+661," ""VibRaw3Xreg""",0
+662," ""VibRaw4Xreg""",0
+663," ""SsCableTwistBypass""",0
+664," ""WindSpeed1""",0
+665," ""WindSpeed2""",0
+666," ""WindSpeed3""",0
+667," ""MeasuredWindSpeed""",0
+668," ""PcsCabinetClosed""",0
+669," ""UpsTowerOn""",0
+670," ""UpsTowerLowBattery""",0
+671," ""UpsTowerBatteryFault""",0
+672," ""PcsCoolingTowerFans1to5Overload""",0
+673," ""MvtrCoolingPump1Overload""",0
+674," ""MvtrCoolingTowerFans1to2Overload""",0
+675," ""MvtrFanMotorOverload""",0
+676," ""MarineLightPanelOverload""",0
+677," ""MvtrCoolingValveOverload""",0
+678," ""MvtrTemperatureMonitorOverload""",0
+679," ""SwitchGearIprOverload""",0
+680," ""TowerDehumidifierOverload""",0
+681," ""AuxtrTemperatureMonitorOverload""",0
+682," ""UpsOverload""",0
+683," ""Tower24vSupplyOverload""",0
+684," ""24vSupplyOk""",0
+685," ""MvtrFanMotorAlarm1""",0
+686," ""MvtrFanMotorAlarm2""",0
+687," ""YawInverterModeSelection1""",0
+688," ""YawInverterModeSelection2""",0
+689," ""AbortWtcBoot""",0
+690," ""GeneratorLubricationAlarm""",0
+691," ""GearboxCoolingdiffPressureSwitch""",0
+692," ""VaristorFuseFail1Left""",0
+693," ""VaristorFuseFail2Right""",0
+694," ""UpsNacelleOn""",0
+695," ""UpsNacelleLowBattery""",0
+696," ""UpsNacelleBatteryFault""",0
+697," ""NacelleFanDiffPressureStatus""",0
+698," ""GeneratorEarthingBrushWear""",0
+699," ""PcsAlarm""",0
+700," ""PcsOff""",0
+701," ""PcsTrip""",0
+702," ""PcsBlockRestart""",0
+703," ""PcsLVRT""",0
+704," ""PcsTorqueReduction""",0
+705," ""PcsReactiveRed""",0
+706," ""PcsGridFault""",0
+707," ""PcsFaulted""",0
+708," ""PcsTransToFaulted""",0
+709," ""PcsSeqTimeOut""",0
+710," ""PcsGRBOpen""",0
+711," ""PcsGRBClosed""",0
+712," ""PcsGenSwOpen""",0
+713," ""PcsGenSwClosed""",0
+714," ""PcsGRBDisconnectorClosed""",0
+715," ""PcsGEBDisconnectorClosed""",0
+716," ""PcsStoppingBrake""",0
+717," ""PcsGRBTestPos""",0
+718," ""PcsVLUTempPos""",0
+719," ""PcsVLUTempNeg""",0
+720," ""PcsGenIsoFail""",0
+721," ""PcsGNDIsoFail""",0
+722," ""PcsCcuMcb""",0
+723," ""PcsCcuBatcharge""",0
+724," ""PcsCcaBatCharge""",0
+725," ""PcsFcaBatCharge""",0
+726," ""PcsWaterPump1Fail""",0
+727," ""PcsWaterPump2Fail""",0
+728," ""PcsCCUCabTempHigh""",0
+729," ""PcsCCACabTempHigh""",0
+730," ""PcsFCACabTempHigh""",0
+731," ""PcsWCUTempHigh""",0
+732," ""PcsWCUFlowLow""",0
+733," ""PcsFiltFlowLow""",0
+734," ""PcsConductivityHigh""",0
+735," ""PcsWCUPressInLow""",0
+736," ""PcsWCUPressOutLow""",0
+737," ""PcsWCUFiltPressInLow""",0
+738," ""PcsWCUFiltPressOutLow""",0
+739," ""PcsWaterPressureSensorInFail""",0
+740," ""PcsWaterPressureSensorOutFail""",0
+741," ""PcsWaterConductSensorFail""",0
+742," ""PcsWaterTempSensorFail""",0
+743," ""PcsWaterTempHigh""",0
+744," ""PcsFiltCabTempHigh""",0
+745," ""PcsCoolingFlowLow""",0
+746," ""PcsConductivityVeryHigh""",0
+747," ""PcsCabinetTempHigh""",0
+748," ""PcsPumpFail""",0
+749," ""PcsWaterPressInLow""",0
+750," ""PcsFilterPressInLow""",0
+751," ""PcsWaterPressOutLow""",0
+752," ""PcsFilterPressOutLow""",0
+753," ""PcsOverCurrGenPhaseR""",0
+754," ""PcsOverCurrGenPhaseRHigh""",0
+755," ""PcsOverCurrGenPhaseS""",0
+756," ""PcsOverCurrGenPhaseSHigh""",0
+757," ""PcsOverCurrGenPhaseT""",0
+758," ""PcsOverCurrGenPhaseTHigh""",0
+759," ""PcsCurrUnbalR""",0
+760," ""PcsCurrUnbalS""",0
+761," ""PcsCurrUnbalT""",0
+762," ""PcsShortCircuitPos""",0
+763," ""PcsShortCircuitNeg""",0
+764," ""PcsShortCircuitPosBk""",0
+765," ""PcsShortCircuitNegBk""",0
+766," ""PcsPowerFailR""",0
+767," ""PcsPowerFailS""",0
+768," ""PcsPowerFailT""",0
+769," ""PcsOverCurrGRI""",0
+770," ""PcsCurrUnbalPhR""",0
+771," ""PcsCurrUnbalPhS""",0
+772," ""PcsCurrUnbalPhT""",0
+773," ""PcsOverVoltagePhRS""",0
+774," ""PcsOverVoltagePhST""",0
+775," ""PcsOverVoltagePhTR""",0
+776," ""PcsUnderVoltagePhRS""",0
+777," ""PcsUnderVoltagePhST""",0
+778," ""PcsUnderVoltagePhTR""",0
+779," ""PcsShortCircuitGRI1""",0
+780," ""PcsShortCircuitGRI2""",0
+781," ""PcsShortCircuitGRI3""",0
+782," ""PcsShortCircuitGRI4""",0
+783," ""PcsEarthFault""",0
+784," ""PcsOverTempFilterInductor""",0
+785," ""PcsIGCTOverTemp""",0
+786," ""PcsGRIPowerFailPhR""",0
+787," ""PcsGRIPowerFailPhS""",0
+788," ""PcsGRIPowerFailPhT""",0
+789," ""PcsGridFreq""",0
+790," ""PcsOverCurrFilterPhR""",0
+791," ""PcsOverCurrFilterPhS""",0
+792," ""PcsOverCurrFilterPhT""",0
+793," ""PcsOverloadFilter""",0
+794," ""PcsUnballancedFilterCurrPhR""",0
+795," ""PcsUnballancedFilterCurrPhS""",0
+796," ""PcsUnballancedFilterCurrPhT""",0
+797," ""PcsOverVoltageDCPos""",0
+798," ""PcsOverVoltageDCNeg""",0
+799," ""PcsAsymetricalVoltageDCLink""",0
+800," ""PcsVLSCDFaultPos""",0
+801," ""PcsVLSCDFaultNeg""",0
+802," ""PcsShortCircuitDCPos""",0
+803," ""PcsShortCircuitDCNeg""",0
+804," ""PcsShortCircuitVLUPos""",0
+805," ""PcsShortCircuitVLUNeg""",0
+806," ""PcsVLUTempHighPos""",0
+807," ""PcsVLUTempHighNeg""",0
+808," ""PcsGRBOpenFail""",0
+809," ""PcsESTOP1""",0
+810," ""PcsESTOP2""",0
+811," ""PcsNOFF""",0
+812," ""PcsGridLossIFUF""",0
+813," ""PcsPECCPUwatchdogFault""",0
+814," ""PcsPECPowerSupplyFault""",0
+815," ""PcsGRIFpgaFault""",0
+816," ""PcsGRIPowerFault""",0
+817," ""PcsGRILemSupplyFault""",0
+818," ""PcsGECFpgaFault""",0
+819," ""PcsGECPowerSupplyFault""",0
+820," ""PcsGECLemSupplyFault""",0
+821," ""PcsGRIML1Error1""",0
+822," ""PcsGRIML1Error2""",0
+823," ""PcsGECML1Error1""",0
+824," ""PcsGECML1Error2""",0
+825," ""PcsGRILinkError""",0
+826," ""PcsGECLinkError""",0
+827," ""PcsCombiPecError1""",0
+828," ""PcsPecCombiError1""",0
+829," ""PcsCombiPecError2""",0
+830," ""PcsPecCombiError2""",0
+831," ""PcsCombiFpgaUpdateFail""",0
+832," ""PcsASELinkError1""",0
+833," ""PcsASELinkError2""",0
+834," ""PcsASEPowerFault""",0
+835," ""PcsASEHw""",0
+836," ""PcsVLSCDFault1""",0
+837," ""PcsVLSCDFault2""",0
+838," ""PcsVLSCDFault3""",0
+839," ""PcsVLSCDFault4""",0
+840," ""PcsVLSCDFault5""",0
+841," ""PcsVLSCDFault6""",0
+842," ""PcsVLSCDFault7""",0
+843," ""PcsVLSCDFault8""",0
+844," ""PcsGRBFeedbackFault""",0
+845," ""PcsGRBFault""",0
+846," ""PcsGRBGroundFault""",0
+847," ""PcsGEBFault""",0
+848," ""PcsEmergencyButtonLocal""",0
+849," ""PcsExtEOff1""",0
+850," ""PcsExtEOff2""",0
+851," ""PcsNormOff""",0
+852," ""PcsChargerTrip""",0
+853," ""PcsChargerTempHigh""",0
+854," ""PcsControlCabTempVHigh""",0
+855," ""PcsS800Error""",0
+856," ""PcsAnybusHeartBeatFail""",0
+857," ""PcsFilterCabTempSensorFail""",0
+858," ""PcsConvCabTempSensorFail""",0
+859," ""PcsControlCabTempSensorFail""",0
+860," ""PcsControlCabCriticalSwitchesOff""",0
+861," ""PcsLineReactorCoreTemp""",0
+862," ""PcsLineReactorWindTemp""",0
+863," ""PcsFilterReactorTemp""",0
+864," ""PcsIgctTemp""",0
+865," ""PcsVluTemp""",0
+866," ""PcsLvrt""",0
+867," ""PcsDcVoltage""",0
+868," ""IprReadyForOperation""",0
+869," ""IprOverPower""",0
+870," ""IprShortCircuit""",0
+871," ""VibStatusTransducerAOverload""",0
+872," ""VibStatusTransducerBOverload""",0
+873," ""VibStatusTransducerCOverload""",0
+874," ""VibStatusTransducerDOverload""",0
+875," ""VibStatus420mAOutputOverload""",0
+876," ""VibStatusTempLimitExceeded""",0
+877," ""VibStatusRampTestInProgress""",0
+878," ""VibStatusAlarmsInhibited""",0
+879," ""VibStatusHWOrFirmwareSettling""",0
+880," ""VibStatusSelfTestInProgress""",0
+881," ""VibStatusAccelTestInProgress""",0
+882," ""VibStatusSystemFailure""",0
+883," ""PitchMaintenanceKeySwitchOn""",0
+884," ""PitchPositionModeActive""",0
+885," ""PitchRateModeActive""",0
+886," ""PitchHubTemperature""",0
+887," ""PitchMainShaftSurfaceTemp""",0
+888," ""PitchMpcReadyToOperate11""",0
+889," ""PitchMpcMainPhaseFault11""",0
+890," ""PitchMpcEmergencyActive11""",0
+891," ""PitchMpcNoSafetyMode11""",0
+892," ""PitchBladeEncoderError11""",0
+893," ""PitchMotorEncoderError11""",0
+894," ""PitchBatterySwitchOn11""",0
+895," ""PitchPowerSupplyOk11""",0
+896," ""PitchMotorPtcOk11""",0
+897," ""PitchMpcCanCommsOk11""",0
+898," ""PitchReserveError11""",0
+899," ""PitchTransistorError11""",0
+900," ""PitchHeatsinkError11""",0
+901," ""PitchLowVoltageError11""",0
+902," ""PitchVoltageElectronicsError11""",0
+903," ""PitchDcVoltageLowError11""",0
+904," ""PitchDcVoltageHighError11""",0
+905," ""PitchParameterError11""",0
+906," ""PitchNHighError11""",0
+907," ""PitchOutputOpenError11""",0
+908," ""PitchResistorBrakeError11""",0
+909," ""PitchHardwareFaultError11""",0
+910," ""PitchControllerProgError11""",0
+911," ""PitchCanBusError11""",0
+912," ""PitchMotorTempError11""",0
+913," ""PitchMotorMaximumError11""",0
+914," ""PitchExternalModule1Error11""",0
+915," ""PitchExternalModule2Error11""",0
+916," ""PitchEepromError11""",0
+917," ""PitchControlledRectifError11""",0
+918," ""PitchPositionError11""",0
+919," ""PitchControlVoltageError11""",0
+920," ""PitchControlFieldError11""",0
+921," ""PitchCommsFailureMasterSlave11""",0
+922," ""PitchMpcReadyToOperate12""",0
+923," ""PitchMpcMainPhaseFault12""",0
+924," ""PitchMpcEmergencyActive12""",0
+925," ""PitchMpcNoSafetyMode12""",0
+926," ""PitchBladeEncoderError12""",0
+927," ""PitchMotorEncoderError12""",0
+928," ""PitchBatterySwitchOn12""",0
+929," ""PitchPowerSupplyOk12""",0
+930," ""PitchMotorPtcOk12""",0
+931," ""PitchMpcCanCommsOk12""",0
+932," ""PitchReserveError12""",0
+933," ""PitchTransistorError12""",0
+934," ""PitchHeatsinkError12""",0
+935," ""PitchLowVoltageError12""",0
+936," ""PitchVoltageElectronicsError12""",0
+937," ""PitchDcVoltageLowError12""",0
+938," ""PitchDcVoltageHighError12""",0
+939," ""PitchParameterError12""",0
+940," ""PitchNHighError12""",0
+941," ""PitchOutputOpenError12""",0
+942," ""PitchResistorBrakeError12""",0
+943," ""PitchHardwareFaultError12""",0
+944," ""PitchControllerProgError12""",0
+945," ""PitchCanBusError12""",0
+946," ""PitchMotorTempError12""",0
+947," ""PitchMotorMaximumError12""",0
+948," ""PitchExternalModule1Error12""",0
+949," ""PitchExternalModule2Error12""",0
+950," ""PitchEepromError12""",0
+951," ""PitchControlledRectifError12""",0
+952," ""PitchPositionError12""",0
+953," ""PitchControlVoltageError12""",0
+954," ""PitchControlFieldError12""",0
+955," ""PitchCommsFailureMasterSlave12""",0
+956," ""PitchMpcReadyToOperate13""",0
+957," ""PitchMpcMainPhaseFault13""",0
+958," ""PitchMpcEmergencyActive13""",0
+959," ""PitchMpcNoSafetyMode13""",0
+960," ""PitchBladeEncoderError13""",0
+961," ""PitchMotorEncoderError13""",0
+962," ""PitchBatterySwitchOn13""",0
+963," ""PitchPowerSupplyOk13""",0
+964," ""PitchMotorPtcOk13""",0
+965," ""PitchMpcCanCommsOk13""",0
+966," ""PitchReserveError13""",0
+967," ""PitchTransistorError13""",0
+968," ""PitchHeatsinkError13""",0
+969," ""PitchLowVoltageError13""",0
+970," ""PitchVoltageElectronicsError13""",0
+971," ""PitchDcVoltageLowError13""",0
+972," ""PitchDcVoltageHighError13""",0
+973," ""PitchParameterError13""",0
+974," ""PitchNHighError13""",0
+975," ""PitchOutputOpenError13""",0
+976," ""PitchResistorBrakeError13""",0
+977," ""PitchHardwareFaultError13""",0
+978," ""PitchControllerProgError13""",0
+979," ""PitchCanBusError13""",0
+980," ""PitchMotorTempError13""",0
+981," ""PitchMotorMaximumError13""",0
+982," ""PitchExternalModule1Error13""",0
+983," ""PitchExternalModule2Error13""",0
+984," ""PitchEepromError13""",0
+985," ""PitchControlledRectifError13""",0
+986," ""PitchPositionError13""",0
+987," ""PitchControlVoltageError13""",0
+988," ""PitchControlFieldError13""",0
+989," ""PitchCommsFailureMasterSlave13""",0
+990," ""PitchMpcReadyToOperate21""",0
+991," ""PitchMpcMainPhaseFault21""",0
+992," ""PitchMpcEmergencyActive21""",0
+993," ""PitchMpcNoSafetyMode21""",0
+994," ""PitchBladeEncoderError21""",0
+995," ""PitchMotorEncoderError21""",0
+996," ""PitchBatterySwitchOn21""",0
+997," ""PitchBatteryVoltageOk21""",0
+998," ""PitchPowerSupplyOk21""",0
+999," ""PitchMotorPtcOk21""",0
+1000," ""PitchBladeAtFineLimitSwitch21""",0
+1001," ""PitchMpcCanCommsOk21""",0
+1002," ""PitchReserveError21""",0
+1003," ""PitchTransistorError21""",0
+1004," ""PitchHeatsinkError21""",0
+1005," ""PitchLowVoltageError21""",0
+1006," ""PitchVoltageElectronicsError21""",0
+1007," ""PitchDcVoltageLowError21""",0
+1008," ""PitchDcVoltageHighError21""",0
+1009," ""PitchParameterError21""",0
+1010," ""PitchNHighError21""",0
+1011," ""PitchOutputOpenError21""",0
+1012," ""PitchResistorBrakeError21""",0
+1013," ""PitchHardwareFaultError21""",0
+1014," ""PitchControllerProgError21""",0
+1015," ""PitchCanBusError21""",0
+1016," ""PitchMotorTempError21""",0
+1017," ""PitchMotorMaximumError21""",0
+1018," ""PitchExternalModule1Error21""",0
+1019," ""PitchExternalModule2Error21""",0
+1020," ""PitchEepromError21""",0
+1021," ""PitchControlledRectifError21""",0
+1022," ""PitchPositionError21""",0
+1023," ""PitchControlVoltageError21""",0
+1024," ""PitchControlFieldError21""",0
+1025," ""PitchCommsFailureMasterSlave21""",0
+1026," ""PitchMpcReadyToOperate22""",0
+1027," ""PitchMpcMainPhaseFault22""",0
+1028," ""PitchMpcEmergencyActive22""",0
+1029," ""PitchMpcNoSafetyMode22""",0
+1030," ""PitchBladeEncoderError22""",0
+1031," ""PitchMotorEncoderError22""",0
+1032," ""PitchBatterySwitchOn22""",0
+1033," ""PitchBatteryVoltageOk22""",0
+1034," ""PitchPowerSupplyOk22""",0
+1035," ""PitchMotorPtcOk22""",0
+1036," ""PitchBladeAtFineLimitSwitch22""",0
+1037," ""PitchMpcCanCommsOk22""",0
+1038," ""PitchReserveError22""",0
+1039," ""PitchTransistorError22""",0
+1040," ""PitchHeatsinkError22""",0
+1041," ""PitchLowVoltageError22""",0
+1042," ""PitchVoltageElectronicsError22""",0
+1043," ""PitchDcVoltageLowError22""",0
+1044," ""PitchDcVoltageHighError22""",0
+1045," ""PitchParameterError22""",0
+1046," ""PitchNHighError22""",0
+1047," ""PitchOutputOpenError22""",0
+1048," ""PitchResistorBrakeError22""",0
+1049," ""PitchHardwareFaultError22""",0
+1050," ""PitchControllerProgError22""",0
+1051," ""PitchCanBusError22""",0
+1052," ""PitchMotorTempError22""",0
+1053," ""PitchMotorMaximumError22""",0
+1054," ""PitchExternalModule1Error22""",0
+1055," ""PitchExternalModule2Error22""",0
+1056," ""PitchEepromError22""",0
+1057," ""PitchControlledRectifError22""",0
+1058," ""PitchPositionError22""",0
+1059," ""PitchControlVoltageError22""",0
+1060," ""PitchControlFieldError22""",0
+1061," ""PitchCommsFailureMasterSlave22""",0
+1062," ""PitchMpcReadyToOperate23""",0
+1063," ""PitchMpcMainPhaseFault23""",0
+1064," ""PitchMpcEmergencyActive23""",0
+1065," ""PitchMpcNoSafetyMode23""",0
+1066," ""PitchBladeEncoderError23""",0
+1067," ""PitchMotorEncoderError23""",0
+1068," ""PitchBatterySwitchOn23""",0
+1069," ""PitchBatteryVoltageOk23""",0
+1070," ""PitchPowerSupplyOk23""",0
+1071," ""PitchMotorPtcOk23""",0
+1072," ""PitchBladeAtFineLimitSwitch23""",0
+1073," ""PitchMpcCanCommsOk23""",0
+1074," ""PitchReserveError23""",0
+1075," ""PitchTransistorError23""",0
+1076," ""PitchHeatsinkError23""",0
+1077," ""PitchLowVoltageError23""",0
+1078," ""PitchVoltageElectronicsError23""",0
+1079," ""PitchDcVoltageLowError23""",0
+1080," ""PitchDcVoltageHighError23""",0
+1081," ""PitchParameterError23""",0
+1082," ""PitchNHighError23""",0
+1083," ""PitchOutputOpenError23""",0
+1084," ""PitchResistorBrakeError23""",0
+1085," ""PitchHardwareFaultError23""",0
+1086," ""PitchControllerProgError23""",0
+1087," ""PitchCanBusError23""",0
+1088," ""PitchMotorTempError23""",0
+1089," ""PitchMotorMaximumError23""",0
+1090," ""PitchExternalModule1Error23""",0
+1091," ""PitchExternalModule2Error23""",0
+1092," ""PitchEepromError23""",0
+1093," ""PitchControlledRectifError23""",0
+1094," ""PitchPositionError23""",0
+1095," ""PitchControlVoltageError23""",0
+1096," ""PitchControlFieldError23""",0
+1097," ""PitchCommsFailureMasterSlave23""",0
+1098," ""PitchPhaseFaultMpc11""",0
+1099," ""PitchPhaseFaultMpc21""",0
+1100," ""PitchPhaseFaultMpc12""",0
+1101," ""PitchPhaseFaultMpc22""",0
+1102," ""PitchPhaseFaultMpc13""",0
+1103," ""PitchPhaseFaultMpc23""",0
+1104," ""PitchBatteryOk21""",0
+1105," ""PitchBatteryChargerUnitOk21""",0
+1106," ""PitchBatteryChargerMainsOk21""",0
+1107," ""PitchBatteryChargerSensorOk21""",0
+1108," ""PitchBatteryOk22""",0
+1109," ""PitchBatteryChargerUnitOk22""",0
+1110," ""PitchBatteryChargerMainsOk22""",0
+1111," ""PitchBatteryChargerSensorOk22""",0
+1112," ""PitchBatteryOk23""",0
+1113," ""PitchBatteryChargerUnitOk23""",0
+1114," ""PitchBatteryChargerMainsOk23""",0
+1115," ""PitchBatteryChargerSensorOk23""",0
+1116," ""PitchCriticalError""",0
+1117," ""PitchDelayedFatalError""",0
+1118," ""PitchFatalError""",0
+1119," ""PitchRebootPitchPlc""",0
+1120," ""PitchNoEfc1""",0
+1121," ""PitchNoEfc2""",0
+1122," ""PitchNoEfc3""",0
+1123," ""PitchUseGrid""",0
+1124," ""Yaw1Tripped""",0
+1125," ""Yaw1Alarm""",0
+1126," ""Yaw1AlarmWord1""",0
+1127," ""Yaw1AlarmWord2""",0
+1128," ""Yaw1AlarmWord3""",0
+1129," ""Yaw1AlarmWord4""",0
+1130," ""Yaw1ActiveFault""",0
+1131," ""Yaw2Tripped""",0
+1132," ""Yaw2Alarm""",0
+1133," ""Yaw2AlarmWord1""",0
+1134," ""Yaw2AlarmWord2""",0
+1135," ""Yaw2AlarmWord3""",0
+1136," ""Yaw2AlarmWord4""",0
+1137," ""Yaw2ActiveFault""",0
+1138," ""WfmsReactivePowerSetpointPowerFactor""",0
+1139," ""WfmsGridConnectionInhibitSignal""",0
+1140," ""WfmsManualStopFromWindParkController""",0
+1141," ""WfmsStopFromWindParkController""",0
+1142," ""WfmsStopDueToGridError""",0
+1143," ""WfmsStopDueToWindParkOverproduction""",0
+1144," ""WfmsStopFromTso""",0
+1145," ""WfmsWindTurbineReconnectionBlockedByTso""",0
+1146," ""DisableHardwareAccesses""",0
+1147," ""HaltControllerStateMachine""",0
+1148," ""AllowRebootsInAnyState""",0
+1149," ""SafetyShutdownActionsDisabled""",0
+1150," ""EnableTestMode""",0
+1151," ""ControllerTaskStackThreshold""",0
+1152," ""DisableAnemometer1""",0
+1153," ""DisableAnemometer2""",0
+1154," ""DisableAnemometer3""",0
+1155," ""DisableWindVane1""",0
+1156," ""DisableWindVane2""",0
+1157," ""DisableWindVane3""",0
+1158," ""YawDisabled""",0
+1159," ""YawAutomaticDisabled""",0
+1160," ""DisableYawEncoderCheck""",0
+1161," ""DisableYawDrive1""",0
+1162," ""DisableYawDrive2""",0
+1163," ""YawBrakePressureProductionFactor""",0
+1164," ""VibSelfTestUserRequest""",0
+1165," ""PcsHeartbeatEnabled""",0
+1166," ""MaxPitchDiffFactorBetweenBlades""",0
+1167," ""PitchBatteryTestMaxWind""",0
+1168," ""PitchBatteryTestingEnabled""",0
+1169," ""PitchBatteryTestRate""",0
+1170," ""PowerProductionPermissionWind""",0
+1171," ""WindSpeedRateOfChange""",0
+1172," ""WindSpeedSafeForYawUnwind""",0
+1173," ""WindSpeedSafeForManualYaw""",0
+1174," ""TShortAverageGeneratorSpeed""",0
+1175," ""TShortMinimumGeneratorSpeed""",0
+1176," ""TShortMaximumGeneratorSpeed""",0
+1177," ""AverageMeasuredPitchAngle1""",0
+1178," ""AverageMeasuredPitchAngle2""",0
+1179," ""AverageMeasuredPitchAngle3""",0
+1180," ""MinPitchRate1""",0
+1181," ""MinPitchRate2""",0
+1182," ""MinPitchRate3""",0
+1183," ""MaxPitchRate1""",0
+1184," ""MaxPitchRate2""",0
+1185," ""MaxPitchRate3""",0
+1186," ""TShortMinimumPitchRate123""",0
+1187," ""TShortMaximumPitchRate123""",0
+1188," ""TLongAveragePitchAngle1""",0
+1189," ""TLongAveragePitchAngle2""",0
+1190," ""TLongAveragePitchAngle3""",0
+1191," ""ControllerSpeedControlEnter Time Out""",0
+1192," ""ControllerPitchBatteryTestEnablePitchSystem Time Out""",0
+1193," ""ControllerPitchBatteryTestFeather Time Out""",0
+1194," ""ControllerVibSelfTestEnter Time Out""",0
+1195," ""ControllerVibSelfTestStop Time Out""",0
+1196," ""ControllerStartUpEnter Time Out""",0
+1197," ""ControllerStartUpBeginGeneration Time Out""",0
+1198," ""ControllerGridLossShutdownWaitForSyncRequest Time Out""",0
+1199," ""ControllerGridLossShutdownWaitForDisconnect Time Out""",0
+1200," ""ControllerGridLossShutdownExit Time Out""",0
+1201," ""ControllerFastShutdownWaitForSyncRequest Time Out""",0
+1202," ""ControllerFastShutdownWaitForDisconnect Time Out""",0
+1203," ""ControllerFastShutdownExit Time Out""",0
+1204," ""ControllerNormalShutdownWaitForSyncRequest Time Out""",0
+1205," ""ControllerNormalShutdownWaitForDisconnect Time Out""",0
+1206," ""ControllerNormalShutdownExit Time Out""",0
+1207," ""ControllerPitchBatteryShtdnWaitForSyncRequest Time Out""",0
+1208," ""ControllerPitchBatteryShtdnWaitForDisconnect Time Out""",0
+1209," ""ControllerPitchBatteryShutdownExit Time Out""",0
+1210," ""Yaw Failed To Move has occurred more than 3 times in 600 Seconds""",0
+1211," ""Pitch Battery Shutdown has occurred more than 3 times in 86400 Seconds""",0
+1212," ""Pitch Fast Shutdown Too Slow1 has occurred more than 3 times in 86400 Seconds""",0
+1213," ""Pitch Fast Shutdown Too Slow2 has occurred more than 3 times in 86400 Seconds""",0
+1214," ""Pitch Fast Shutdown Too Slow3 has occurred more than 3 times in 86400 Seconds""",0
+1215," ""Pitch Demand Difference Error1and2 has occurred more than 3 times in 86400 Seconds""",0
+1216," ""Pitch Demand Difference Error2and3 has occurred more than 3 times in 86400 Seconds""",0
+1217," ""Pitch Demand Difference Error1and3 has occurred more than 3 times in 86400 Seconds""",0
+1218," ""Sub Pitch Comms Error has occurred more than 3 times in 86400 Seconds""",0
+1219," ""Sub Pitch Priv Fatal Error has occurred more than 3 times in 86400 Seconds""",0
+1220," ""Sub Pitch Priv Critical Error has occurred more than 3 times in 86400 Seconds""",0
+1221," ""Sub Pitch Priv Autonomous Feather has occurred more than 3 times in 86400 Seconds""",0
+1222," ""Sw Over Speed has occurred more than 3 times in 86400 Seconds""",0
+1223," ""Pitch Following Error1 has occurred more than 3 times in 86400 Seconds""",0
+1224," ""Pitch Following Error2 has occurred more than 3 times in 86400 Seconds""",0
+1225," ""Pitch Following Error3 has occurred more than 3 times in 86400 Seconds""",0
+1226," ""Pitch Following Error Vspr1 has occurred more than 3 times in 86400 Seconds""",0
+1227," ""Pitch Following Error Vspr2 has occurred more than 3 times in 86400 Seconds""",0
+1228," ""Pitch Following Error Vspr3 has occurred more than 3 times in 86400 Seconds""",0
+1229," ""Blade Load Sensor Failure has occurred more than 3 times in 86400 Seconds""",0
+1230," ""Load Sensor Range Error has occurred more than 1 times in 86400 Seconds""",0
+1231," ""FaultTbFm211 is faulted""",0
+1232," ""FaultTb1stDio280 is faulted""",0
+1233," ""FaultTb2ndDio280 is faulted""",0
+1234," ""FaultTb1stAio288 is faulted""",0
+1235," ""FaultTb2ndAio288 is faulted""",0
+1236," ""FaultTb1stPtai216 is faulted""",0
+1237," ""FaultTb2ndPtai216 is faulted""",0
+1238," ""FaultTbDpm200 is faulted""",0
+1239," ""FaultTbRs204 is faulted""",0
+1240," ""FaultNacUpFs212 is faulted""",0
+1241," ""FaultNacUp1stDio280 is faulted""",0
+1242," ""FaultNacUp2ndDio280 is faulted""",0
+1243," ""FaultNacUp1stAio288 is faulted""",0
+1244," ""FaultNacUp2ndAio288 is faulted""",0
+1245," ""FaultNacUp3rdAio288 is faulted""",0
+1246," ""FaultNacUp1stPtai216 is faulted""",0
+1247," ""FaultNacUp2ndPtai216 is faulted""",0
+1248," ""FaultNacUp1stDpm200 is faulted""",0
+1249," ""FaultNacUp2ndDpm200 is faulted""",0
+1250," ""FaultNacUp1stIsi222 is faulted""",0
+1251," ""FaultNacUp2ndIsi222 is faulted""",0
+1252," ""FaultNacUpRs204 is faulted""",0
+1253," ""FaultNacLowFs212 is faulted""",0
+1254," ""FaultNacLow1stDio280 is faulted""",0
+1255," ""FaultNacLow2ndDio280 is faulted""",0
+1256," ""FaultNacLow1stAio288 is faulted""",0
+1257," ""FaultNacLow2ndAio288 is faulted""",0
+1258," ""FaultNacLow1stPtai216 is faulted""",0
+1259," ""FaultNacLow2ndPtai216 is faulted""",0
+1260," ""FaultNacLow3rdPtai216 is faulted""",0
+1261," ""FaultNacLowEm203 is faulted""",0
+1616," ""Wind in noise stop sector""",0
+1617," ""Noise shutdown""",0
+999051,Requested Shutdown - LDT - Owner Stop,0
+999081,Planned Corrective - Retrofit,0
+999105,Suspended - Forced outage - LDT,0
+999022,LDT - Partial Performance - Degraded - OPS,0
+999081,LDT - Planned Corrective - Owner,0
+999070,LDT - Scheduled Maintenance - Operator,0
+999070,LDT - Scheduled Maintenance - Owner - CR&D,0
+999081,LDT - Planned Corrective - Owner - OPS,0
+2000,oise Curtailment: estimated,0
+999083,Planned Corrective - Other,0
+999050,LDT - Req. Shutdown - Owner - OPS - Shadow flicker,0
+999082,Planned Corrective - Upgrade,0
+999050,LDT - Requested Shutdown - Owner - OPS - Shadow flicker,0
+999081,LDT - Planned Corrective - Owner - CR&D,0
+999052,Requested Shutdown - LDT - Operator Stop,0
+1100002,Requested Shutdown - LDT - Turbulence Curtailment,0
+999081,LDT - Planned Corrective - Operator,0
+999094,Forced Outage - Failure repair,0
+999070,Scheduled Maintenance,0
+999091,Forced Outage - Response,0
+999084,Wind Farm Control Testing,0
+999092,Forced Outage - Diagnostic,0
+999022,Partial Performance - Degraded,0
+1100005,Requested Shutdown - LDT - Shadow Flicker,0
