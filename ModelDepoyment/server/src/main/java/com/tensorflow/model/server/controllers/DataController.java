@@ -2,23 +2,28 @@ package com.tensorflow.model.server.controllers;
 
 import com.tensorflow.model.server.DAO.Nasa;
 import com.tensorflow.model.server.Repository.NasaRepository;
-import com.tensorflow.model.server.Utility.CsvReader;
+import com.tensorflow.model.server.Service.NasaService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.InputStream;
-
-@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/data")
 class DataController {
-    NasaRepository nasaRepository;
-    @GetMapping(value = "/nasa/")
-    public Double getLatestRow(){
-        return 0.0;
+
+    @Autowired
+    private NasaService nasaService;
+    private int nextId = 1;
+
+    @GetMapping(value = "/nasa/",
+                produces = MediaType.APPLICATION_JSON_VALUE)
+    public Nasa findLatestRow(){
+        Nasa out = nasaService.findById(nextId);
+        nextId++;
+        return out;
     }
 
-    @PutMapping(value = "/nasa/", consumes = "text/csv")
-    public void uploadNasa(@RequestBody InputStream stream){
-        nasaRepository.saveAll(CsvReader.readCsv(Nasa.class, stream));
-    }
+
 }

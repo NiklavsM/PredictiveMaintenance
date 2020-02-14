@@ -1,35 +1,32 @@
 package com.tensorflow.model.server.DAO;
 
+import lombok.Data;
 
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Data
 public class Nasa {
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private int id;
-    private Date timestamp;
-    private double setting1;
-    private double setting2;
-    private double s2;
-    private double s3;
-    private double s4;
-    private double s6;
-    private double s7;
-    private double s8;
-    private double s9;
-    private double s11;
-    private double s12;
-    private double s13;
-    private double s14;
-    private double s15;
-    private double s17;
-    private double s20;
-    private double s21;
+    private Integer id;
+//    private Date timestamp;
+    private Double setting1;
+    private Double setting2;
+    private Double s2;
+    private Double s3;
+    private Double s4;
+    private Double s6;
+    private Double s7;
+    private Double s8;
+    private Double s9;
+    private Double s11;
+    private Double s12;
+    private Double s13;
+    private Double s14;
+    private Double s15;
+    private Double s17;
+    private Double s20;
+    private Double s21;
 }
