@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import {
-    AreaChart, Area, Brush, ReferenceLine, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
+    AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from 'recharts';
 import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
@@ -9,17 +9,19 @@ import CustomTooltip from './CustomTooltip';
 
 
 import data from '../resources/mockData.json';
-import moment from "moment";
+import moment from 'moment';
 import {settingsList, coloursList} from "../resources/ValuesLists";
+// import {getData} from "../resources/FetchData";
 
-export default class Example extends PureComponent {
+export default class Graph extends PureComponent {
     constructor() {
         super();
         this.state = {
             setting: 's2',
             filteredData: '',
             batchData: [],
-            needsChange: false
+            needsChange: false,
+            fullData:''
         };
 
     }
@@ -28,9 +30,13 @@ export default class Example extends PureComponent {
     batchData = [];
 
     componentDidMount() {
-        this.batchData.push(data[this.batchData.length]);
-        this.batchData.push(data[this.batchData.length]);
-        this.setData('s2');
+       // this.setState({fullData: getData()}, ()=>  console.log) uncomment when link works
+        //  const tempData = getData(); //the state setting can be too slow initially this is why I use also a temp variable for the initial load
+        this.setState({fullData: data});// delete when the previous line works
+        const tempData = data; // delete when the axios call works
+        this.batchData.push(tempData[this.batchData.length]);
+        this.batchData.push(tempData[this.batchData.length]);
+    this.setData('s2');
         this.interval = setInterval(() => this.loadPatchedData(), 5000);
     }
 
@@ -49,9 +55,9 @@ export default class Example extends PureComponent {
 
 
     loadPatchedData = () => {
-        if (this.batchData.length < data.length) {
-            this.batchData.push(data[this.batchData.length]); //i
-            this.batchData.push(data[this.batchData.length]); //i+1
+        if (this.batchData.length < this.state.fullData.length) {
+            this.batchData.push(this.state.fullData[this.batchData.length]); //i
+            this.batchData.push(this.state.fullData[this.batchData.length]); //i+1
             this.setState({batchData: this.batchData}, ()=>  console.log);
             this.setState({needsChange: true})
         } else {
@@ -63,7 +69,7 @@ export default class Example extends PureComponent {
     setData = (setting) => {
         let tempData = [];
         let filteredObject = '';
-        this.batchData.forEach(function (obj) {
+        this.batchData.forEach(obj => {
             filteredObject = {
                 date: moment(obj.date * 1000).format("YYYY-MM-DD"),
                 value: obj[setting],
@@ -82,7 +88,6 @@ export default class Example extends PureComponent {
 
 
     render() {
-        console.log('called')
         return (
             <div>
                 <h1>The selected setting is {this.state.setting !== '' ? this.state.setting.toUpperCase() : 'S2'} </h1>
