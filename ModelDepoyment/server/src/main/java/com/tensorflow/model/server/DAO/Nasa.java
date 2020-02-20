@@ -1,12 +1,14 @@
 package com.tensorflow.model.server.DAO;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Date;
+
 
 @Entity
 @Data
+@AllArgsConstructor
 public class Nasa {
 
     @Id
@@ -29,4 +31,8 @@ public class Nasa {
     private Double s17;
     private Double s20;
     private Double s21;
+
+    public Integer getId() {
+        return id;
+    }
 }
