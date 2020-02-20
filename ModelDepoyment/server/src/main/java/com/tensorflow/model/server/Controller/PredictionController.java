@@ -19,13 +19,12 @@ class PredictionController {
 
     @GetMapping("/predict")
     public String predict() {
-        // create headers
+
         HttpHeaders headers = new HttpHeaders();
-        // set `content-type` header
         headers.setContentType(MediaType.APPLICATION_JSON);
-        // set `accept` header
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
         JSONObject sensoryData = new JSONObject();
+
         double[][] array = {{0.741379, 0.500000, 0.370482, 0.285154, 0.408001, 1.0, 0.679549, 0.196970, 0.105717, 0.255952, 0.573561, 0.250000, 0.170090, 0.257022, 0.250000, 0.666667, 0.662110}};
         try {
             sensoryData.put("instances", new JSONArray(array));
