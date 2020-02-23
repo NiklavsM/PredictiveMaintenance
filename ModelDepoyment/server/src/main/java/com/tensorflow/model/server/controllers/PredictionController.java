@@ -1,4 +1,4 @@
-package com.tensorflow.model.server.Controller;
+package com.tensorflow.model.server.controllers;
 
 import org.json.JSONArray;
 import org.json.JSONException;

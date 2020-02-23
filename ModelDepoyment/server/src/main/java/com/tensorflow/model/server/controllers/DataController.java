@@ -1,4 +1,4 @@
-package com.tensorflow.model.server.Controller;
+package com.tensorflow.model.server.controllers;
 
 import com.tensorflow.model.server.DAO.Nasa;
 import com.tensorflow.model.server.Service.NasaService;

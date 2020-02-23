@@ -1,4 +1,4 @@
-package com.tensorflow.model.server.Controller;
+package com.tensorflow.model.server.controllers;
 
 import com.tensorflow.model.server.DAO.Nasa;
 import com.tensorflow.model.server.ServerApplication;
@@ -8,7 +8,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static com.tensorflow.model.server.Utility.TestDataBuilder.populateNasaDAO;
 import static com.tensorflow.model.server.Utility.TestDataBuilder.populateStoredNasaDAO1;
 import static com.tensorflow.model.server.Utility.TestDataBuilder.populateStoredNasaDAO2;
 import static org.junit.jupiter.api.Assertions.assertEquals;
