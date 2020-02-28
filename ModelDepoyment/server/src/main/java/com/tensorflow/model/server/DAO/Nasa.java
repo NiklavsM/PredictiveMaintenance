@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 public class Nasa {
-
+    public Nasa(){}
     @Id
     private Integer id;
 //    private Date timestamp;
@@ -32,7 +32,7 @@ public class Nasa {
     private Double s20;
     private Double s21;
 
-    public Integer getId() {
-        return id;
-    }
+//    public Integer getId() {
+//        return id;
+//    }
 }

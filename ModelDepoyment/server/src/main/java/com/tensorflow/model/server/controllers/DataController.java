@@ -14,6 +14,7 @@ class DataController {
     private NasaService nasaService;
     private int nextId = 0;
 
+    @CrossOrigin
     @GetMapping(value = "/nasa/",
                 produces = MediaType.APPLICATION_JSON_VALUE)
     public Nasa findLatestRow(){
