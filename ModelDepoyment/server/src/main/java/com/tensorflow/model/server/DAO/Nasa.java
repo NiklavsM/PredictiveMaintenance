@@ -13,7 +13,7 @@ public class Nasa {
 
     @Id
     private Integer id;
-//    private Date timestamp;
+    private Integer timestamp;
     private Double setting1;
     private Double setting2;
     private Double s2;
@@ -32,6 +32,9 @@ public class Nasa {
     private Double s20;
     private Double s21;
 
+    public Nasa(){
+
+    }
     public Integer getId() {
         return id;
     }
