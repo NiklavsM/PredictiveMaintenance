@@ -8,10 +8,11 @@ import '../style.css';
 import CustomTooltip from './CustomTooltip';
 
 
-import data from '../resources/mockData.json';
+// import data from '../resources/mockData.json';
 import moment from 'moment';
 import {settingsList, coloursList} from "../resources/ValuesLists";
 import {getData} from "../resources/FetchData";
+import axios from "axios";
 
 export default class Graph extends PureComponent {
     constructor() {
@@ -30,13 +31,13 @@ export default class Graph extends PureComponent {
     batchData = [];
 
     componentDidMount() {
-       this.setState({fullData: getData()}, ()=>  console.log); // uncomment when link works
+       this.setState({fullData: this.getData()}, ()=>  console.log); // uncomment when link works
          const tempData = getData(); //the state setting can be too slow initially this is why I use also a temp variable for the initial load
         // this.setState({fullData: data});// delete when the previous line works
         // const tempData = data; // delete when the axios call works
-        this.batchData.push(tempData[this.batchData.length]);
-        this.batchData.push(tempData[this.batchData.length]);
-    this.setData('s2');
+    //     this.batchData.push(tempData[this.batchData.length]);
+    //     this.batchData.push(tempData[this.batchData.length]);
+    // this.setData('s2');
         this.interval = setInterval(() => this.loadPatchedData(), 5000);
     }
 
@@ -71,7 +72,7 @@ export default class Graph extends PureComponent {
         let filteredObject = '';
         this.batchData.forEach(obj => {
             filteredObject = {
-                date: moment(obj.date * 1000).format("YYYY-MM-DD"),
+                date: moment(obj.timestamp * 1000).format("YYYY-MM-DD"),
                 value: obj[setting],
                 rul: obj.rul,
                 name: setting
@@ -79,11 +80,28 @@ export default class Graph extends PureComponent {
             tempData.push(filteredObject);
         });
         this.setState({filteredData: tempData});
+
     }
 
 
     onSelectSetting = (e) => {
         this.setState({setting: e.value})
+    };
+
+    getData = () => {
+        let graphData='';
+        axios.get("http://localhost:8080/data/nasa/")
+            .then(res => {
+                graphData = res.data;
+                this.setState({fullData: graphData}, ()=>  console.log);
+                const tempData = graphData;
+                console.log(graphData)
+
+                this.batchData.push(tempData[this.batchData.length]);
+                this.batchData.push(tempData[this.batchData.length]);
+                this.setData('s2');
+            });
+
     };
 
 
