@@ -31,5 +31,6 @@ export const coloursList = {
     s15: "#d866c6",
     s17: "#c06bd8",
     s20: "#955ed8",
-    s21: "#4d44d8"
+    s21: "#4d44d8",
+    rul: "#d82939"
 };

@@ -126,7 +126,7 @@ export default class Graph extends PureComponent {
                             <CartesianGrid strokeDasharray="3 3"/>
                             <XAxis dataKey="date" hide={true}/>
                             <YAxis/>
-                            <Tooltip content={<CustomTooltip style={{backgroundColor: 'red'}}/>}/>
+                            <Tooltip content={<CustomTooltip style={{backgroundColor: 'red'}} name="Value"/>}/>
                             <Area type="monotone" dataKey="value" stroke={coloursList[this.state.setting]}
                                   fill={coloursList[this.state.setting]}/>
                         </AreaChart>

@@ -5,11 +5,7 @@ const CustomTooltipContent = (props) => {
     if (props.payload[0] != null) {
         const newPayload = [
             {
-                name: 'RUL',
-                value: props.payload[0].payload.rul,
-            },
-            {
-                name: 'Value',
+                name: props.name,
                 value: props.payload[0].payload.value,
             },
         ];
