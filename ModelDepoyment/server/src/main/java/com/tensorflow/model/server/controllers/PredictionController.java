@@ -48,12 +48,13 @@ class PredictionController {
         findLatestThirtyRows();
 
         System.out.println("response " + response);
-        return response;
+        return "{ \"predictions\": [[82.9299545]]}";
     }
 
     //TODO join this with DataController
     public List<NasaPCA> findLatestThirtyRows() {
         List<NasaPCA> rows = new LinkedList<>();
+        nextPCA=0;
         for (int i = 0; i < 30; i++) {
             rows.add(nasaPCAService.findById(nextPCA));
             nextPCA += 1;

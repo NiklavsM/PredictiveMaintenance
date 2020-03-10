@@ -20,16 +20,17 @@ export default class Graph extends PureComponent {
         super();
         this.state = {
             filteredData: '',
-            fullData:''
+            fullData:[],
         };
 
     }
 
     interval = 0;
-    fullData = [];
+   //fullData = [];
 
     componentDidMount() {
-        this.setState({fullData: this.getData()}, ()=>  console.log); // uncomment when link works
+        this.getData();
+        //this.setState({fullData: this.getData()}, ()=>  console.log); // uncomment when link works
         // the state setting can be too slow initially this is why I use also a temp variable for the initial load
         // this.setState({fullData: data});// delete when the previous line works
         // const tempData = data; // delete when the axios call works
@@ -51,19 +52,19 @@ export default class Graph extends PureComponent {
             tempData.push(filteredObject);
         });
         this.setState({filteredData: tempData});
-
+       console.log(this.state.filteredData)
     }
+
 
 
     getData = () => {
         let graphData='';
         axios.get("http://localhost:8080/predict")
             .then(res => {
-                graphData = res.data;
-
-                this.setState({fullData: this.state.fullData.append(graphData)}, ()=>  console.log);
+                graphData = res.data.predictions[0];
+                this.state.fullData.push(graphData);
+                this.setState({fullData: this.state.fullData.push(graphData)}, ()=>  console.log(this.state.fullDate));
                 const tempData = this.state.fullData.append(graphData);
-                console.log(graphData)
 
                 this.batchData.push(tempData[this.batchData.length]);
                 this.batchData.push(tempData[this.batchData.length]);

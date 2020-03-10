@@ -95,7 +95,7 @@ export default class Graph extends PureComponent {
                 graphData = res.data;
                 this.setState({fullData: graphData}, ()=>  console.log);
                 const tempData = graphData;
-                console.log(graphData)
+            //    console.log(graphData)
 
                 this.batchData.push(tempData[this.batchData.length]);
                 this.batchData.push(tempData[this.batchData.length]);

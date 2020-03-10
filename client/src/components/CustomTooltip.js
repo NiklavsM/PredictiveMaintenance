@@ -2,6 +2,7 @@ import React from 'react';
 import DefaultTooltipContent from 'recharts/lib/component/DefaultTooltipContent';
 
 const CustomTooltipContent = (props) => {
+ //   console.log(props.payload[0])
     if (props.payload[0] != null) {
         const newPayload = [
             {

@@ -6,7 +6,7 @@ import './style.css';
 function App() {
   return (
     <div className="App">
-    <Graph/>
+    {/*<Graph/>*/}
       <GraphRUL/>
     </div>
   );
