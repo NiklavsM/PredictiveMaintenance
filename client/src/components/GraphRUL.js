@@ -5,23 +5,21 @@ import {
 import 'react-dropdown/style.css'
 import '../style.css';
 import {dates} from '../resources/dates';
-
-
-import {coloursList} from "../resources/ValuesLists";
 import axios from "axios";
+import Graph from './Graph';
 
-export default class Graph extends PureComponent {
+export default class GraphRUL extends PureComponent {
     constructor() {
         super();
         this.state = {
             filteredData: '',
-            fullData:[],
+            fullData: [],
         };
 
     }
 
     interval = 0;
-   tempData = [];
+    tempData = [];
 
     componentDidMount() {
         this.getData();
@@ -32,7 +30,7 @@ export default class Graph extends PureComponent {
     setData = () => {
         let tempData = [];
         let filteredObject = '';
-        this.state.fullData.forEach((obj,i) => {
+        this.state.fullData.forEach((obj, i) => {
             filteredObject = {
                 date: dates[i],
                 rul: obj[0],
@@ -43,20 +41,19 @@ export default class Graph extends PureComponent {
     }
 
 
-
     getData = () => {
-        let graphData='';
+        let graphData = '';
         axios.get("http://localhost:8080/predict")
             .then(res => {
                 graphData = res.data.predictions[0];
                 this.tempData = this.state.fullData;
                 this.tempData.push(graphData);
-                this.setState({fullData: this.tempData}, ()=>  console.log());
+                this.setState({fullData: this.tempData}, () => console.log());
                 this.setData();
             })
             .catch(error => {
-                    console.log(error)
-                });
+                console.log(error)
+            });
 
     };
 
@@ -66,29 +63,7 @@ export default class Graph extends PureComponent {
             <div className="graphContainer">
                 <div className='graphRUL'>
                     <h1>The RUL processed values</h1>
-                    <ResponsiveContainer>
-                        <AreaChart
-                            data={this.state.filteredData}
-                            margin={{
-                                top: 10, right: 30, left: 0, bottom: 0,
-                            }}
-                        >
-                            <CartesianGrid strokeDasharray="3 3"/>
-                            <XAxis dataKey="date" hide={true}/>
-                            <YAxis />
-                            <Area type="monotone" dataKey="rul" stroke={coloursList['rul']}
-                                  fill={coloursList['rul']}/>
-                            <Tooltip              labelStyle={{ color: "#676767" }}
-                                                  itemStyle={{ fontWeight: "bold", color:"black" }}
-                                                 formatter={function(value) {
-                                return value;
-                            }}
-                                       labelFormatter={function(value) {
-                                           return value;
-                                       }}/>
-
-                        </AreaChart>
-                    </ResponsiveContainer>
+                    <Graph data={this.state.filteredData} setting="none"/>
                 </div>
             </div>
         );

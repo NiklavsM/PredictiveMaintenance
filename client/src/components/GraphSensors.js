@@ -1,26 +1,20 @@
 import React, {PureComponent} from 'react';
-import {
-    AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-} from 'recharts';
 import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
 import '../style.css';
-import CustomTooltip from './CustomTooltip';
+import Graph from './Graph.js'
 
-
-import data from '../resources/mockData.json';
 import moment from 'moment';
 import {settingsList, coloursList} from "../resources/ValuesLists";
-import {getData} from "../resources/FetchData";
 import axios from "axios";
 
-export default class Graph extends PureComponent {
+export default class GraphSensors extends PureComponent {
     constructor() {
         super();
         this.state = {
             setting: 's2',
             filteredData: '',
-            fullData:[]
+            fullData: []
         };
 
     }
@@ -29,12 +23,9 @@ export default class Graph extends PureComponent {
     tempData = [];
 
     componentDidMount() {
-       this.getData();
+        this.getData();
         this.interval = setInterval(() => this.getData(), 6000);
     }
-
-
-
 
 
     setData = (setting) => {
@@ -60,13 +51,13 @@ export default class Graph extends PureComponent {
     };
 
     getData = () => {
-        let graphData='';
+        let graphData = '';
         axios.get("http://localhost:8080/data/nasa/")
             .then(res => {
                 graphData = res.data;
                 this.tempData = this.state.fullData;
                 this.tempData.push(graphData);
-                this.setState({fullData: this.tempData}, ()=>  console.log);
+                this.setState({fullData: this.tempData}, () => console.log);
                 this.setData('s2');
             });
 
@@ -84,29 +75,7 @@ export default class Graph extends PureComponent {
                 </div>
                 <div className='graphSensor'>
                     <h1>The selected setting is {this.state.setting !== '' ? this.state.setting.toUpperCase() : 'S2'} </h1>
-                    <ResponsiveContainer>
-                        <AreaChart
-                            data={this.state.filteredData}
-                            margin={{
-                                top: 10, right: 30, left: 0, bottom: 0,
-                            }}
-                        >
-                            <CartesianGrid strokeDasharray="3 3"/>
-                            <XAxis dataKey="date" hide={true}/>
-                            <YAxis/>
-                            <Tooltip
-                                labelStyle={{ color: "#676767" }}
-                                itemStyle={{ fontWeight: "bold", color:"black" }}
-                                formatter={function(value) {
-                                return value;
-                            }}
-                                                   labelFormatter={function(value) {
-                                                       return  value;
-                                                   }}/>/>}
-                            <Area type="monotone" dataKey="value" stroke={coloursList[this.state.setting]}
-                                  fill={coloursList[this.state.setting]}/>
-                        </AreaChart>
-                    </ResponsiveContainer>
+                    <Graph data={this.state.filteredData} setting={this.state.setting}/>
                 </div>
             </div>
         );
