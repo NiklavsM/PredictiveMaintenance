@@ -28,16 +28,12 @@ class DataController {
     @CrossOrigin
     @GetMapping(value = "/nasa/",
                 produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Nasa> findLatestRow(){
-
-        List<Nasa> rows = new LinkedList<>();
-        for (int i = 0; i < 30; i++){
-            rows.add(nasaService.findById(nextId));
-            nextId += 1;
-        }
-        return rows;//        Nasa out = nasaService.findById(nextId);
-//        nextId++;
-//        return out;
+    public Nasa findLatestRow(){
+       Nasa out = nasaService.findById(nextId);
+   nextId++;
+   if(nextId == 29)
+       nextId = 0;
+    return out;
     }
 
     // ToDo rework to 30 rows at once

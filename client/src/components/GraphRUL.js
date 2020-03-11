@@ -2,17 +2,12 @@ import React, {PureComponent} from 'react';
 import {
     AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from 'recharts';
-import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css'
 import '../style.css';
-import CustomTooltip from './CustomTooltip';
 import {dates} from '../resources/dates';
 
 
-// import data from '../resources/mockData.json';
-import moment from 'moment';
-import {settingsList, coloursList} from "../resources/ValuesLists";
-import {getData} from "../resources/FetchData";
+import {coloursList} from "../resources/ValuesLists";
 import axios from "axios";
 
 export default class Graph extends PureComponent {
@@ -26,33 +21,25 @@ export default class Graph extends PureComponent {
     }
 
     interval = 0;
-   //fullData = [];
+   tempData = [];
 
     componentDidMount() {
         this.getData();
-        //this.setState({fullData: this.getData()}, ()=>  console.log); // uncomment when link works
-        // the state setting can be too slow initially this is why I use also a temp variable for the initial load
-        // this.setState({fullData: data});// delete when the previous line works
-        // const tempData = data; // delete when the axios call works
-        //     this.batchData.push(tempData[this.batchData.length]);
-        //     this.batchData.push(tempData[this.batchData.length]);
-        // this.setData('s2');
-        this.interval = setInterval(() => this.getData(), 5000);
+        this.interval = setInterval(() => this.getData(), 6000);
     }
 
 
     setData = () => {
         let tempData = [];
         let filteredObject = '';
-        this.fullData.forEach((i,obj) => {
+        this.state.fullData.forEach((obj,i) => {
             filteredObject = {
                 date: dates[i],
-                rul: obj.predictions,
+                rul: obj[0],
             };
             tempData.push(filteredObject);
         });
         this.setState({filteredData: tempData});
-       console.log(this.state.filteredData)
     }
 
 
@@ -62,23 +49,23 @@ export default class Graph extends PureComponent {
         axios.get("http://localhost:8080/predict")
             .then(res => {
                 graphData = res.data.predictions[0];
-                this.state.fullData.push(graphData);
-                this.setState({fullData: this.state.fullData.push(graphData)}, ()=>  console.log(this.state.fullDate));
-                const tempData = this.state.fullData.append(graphData);
-
-                this.batchData.push(tempData[this.batchData.length]);
-                this.batchData.push(tempData[this.batchData.length]);
+                this.tempData = this.state.fullData;
+                this.tempData.push(graphData);
+                this.setState({fullData: this.tempData}, ()=>  console.log());
                 this.setData();
-            });
+            })
+            .catch(error => {
+                    console.log(error)
+                });
 
     };
 
 
     render() {
         return (
-            <div>
-                <h1>The RUL processed values</h1>
-                <div className='graph'>
+            <div className="graphContainer">
+                <div className='graphRUL'>
+                    <h1>The RUL processed values</h1>
                     <ResponsiveContainer>
                         <AreaChart
                             data={this.state.filteredData}
@@ -88,10 +75,18 @@ export default class Graph extends PureComponent {
                         >
                             <CartesianGrid strokeDasharray="3 3"/>
                             <XAxis dataKey="date" hide={true}/>
-                            <YAxis/>
-                            <Tooltip content={<CustomTooltip style={{backgroundColor: 'red'}} name="RUL"/>}/>
-                            <Area type="monotone" dataKey="value" stroke={coloursList['rul']}
-                                  fill={coloursList[this.state.setting]}/>
+                            <YAxis />
+                            <Area type="monotone" dataKey="rul" stroke={coloursList['rul']}
+                                  fill={coloursList['rul']}/>
+                            <Tooltip              labelStyle={{ color: "#676767" }}
+                                                  itemStyle={{ fontWeight: "bold", color:"black" }}
+                                                 formatter={function(value) {
+                                return value;
+                            }}
+                                       labelFormatter={function(value) {
+                                           return value;
+                                       }}/>
+
                         </AreaChart>
                     </ResponsiveContainer>
                 </div>

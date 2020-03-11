@@ -2,6 +2,8 @@
   text-align: center;
   width: 100%;
   height: 100%;
+  padding-left: 5vw;
+  display: inline-block;
 }
 
 .menus {
@@ -14,19 +16,29 @@
   color: snow;
 }
 
-.graph {
+.graphRUL, .graphSensor {
   width: 45vw;
   height: 50vh;
   margin: 2.3vw auto 0;
 }
 
+.graphRUL{
+  margin-top: 15.5vh;
+}
+
+
+.graphContainer{
+  float: left;
+}
+
 .drop{
   width: 30vw;
   display: inline-block;
+  font-weight: bold;
 }
 
 h1 {
-  color: #4f4f4f;
+  color: #636363;
 }
 
 .recharts-tooltip-label {

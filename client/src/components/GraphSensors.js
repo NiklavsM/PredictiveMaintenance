@@ -8,7 +8,7 @@ import '../style.css';
 import CustomTooltip from './CustomTooltip';
 
 
-// import data from '../resources/mockData.json';
+import data from '../resources/mockData.json';
 import moment from 'moment';
 import {settingsList, coloursList} from "../resources/ValuesLists";
 import {getData} from "../resources/FetchData";
@@ -20,57 +20,28 @@ export default class Graph extends PureComponent {
         this.state = {
             setting: 's2',
             filteredData: '',
-            batchData: [],
-            needsChange: false,
-            fullData:''
+            fullData:[]
         };
 
     }
 
     interval = 0;
-    batchData = [];
+    tempData = [];
 
     componentDidMount() {
-       this.setState({fullData: this.getData()}, ()=>  console.log); // uncomment when link works
-         const tempData = getData(); //the state setting can be too slow initially this is why I use also a temp variable for the initial load
-        // this.setState({fullData: data});// delete when the previous line works
-        // const tempData = data; // delete when the axios call works
-    //     this.batchData.push(tempData[this.batchData.length]);
-    //     this.batchData.push(tempData[this.batchData.length]);
-    // this.setData('s2');
-        this.interval = setInterval(() => this.loadPatchedData(), 5000);
+       this.getData();
+        this.interval = setInterval(() => this.getData(), 6000);
     }
 
 
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        if (this.state.setting !== prevState.setting || this.state.needsChange === true) {
-            const setting = this.state.setting;
-            this.setData(setting);
-            this.setState({needsChange:false})
-        }
-    }
 
-    stopInterval = () => {
-        clearInterval(this.interval);
-    };
-
-
-    loadPatchedData = () => {
-        if (this.batchData.length < this.state.fullData.length) {
-            this.batchData.push(this.state.fullData[this.batchData.length]); //i
-            this.batchData.push(this.state.fullData[this.batchData.length]); //i+1
-            this.setState({batchData: this.batchData}, ()=>  console.log);
-            this.setState({needsChange: true})
-        } else {
-             this.stopInterval();
-        }
-    };
 
 
     setData = (setting) => {
         let tempData = [];
         let filteredObject = '';
-        this.batchData.forEach(obj => {
+
+        this.state.fullData.forEach(obj => {
             filteredObject = {
                 date: moment(obj.timestamp * 1000).format("YYYY-MM-DD"),
                 value: obj[setting],
@@ -93,12 +64,9 @@ export default class Graph extends PureComponent {
         axios.get("http://localhost:8080/data/nasa/")
             .then(res => {
                 graphData = res.data;
-                this.setState({fullData: graphData}, ()=>  console.log);
-                const tempData = graphData;
-            //    console.log(graphData)
-
-                this.batchData.push(tempData[this.batchData.length]);
-                this.batchData.push(tempData[this.batchData.length]);
+                this.tempData = this.state.fullData;
+                this.tempData.push(graphData);
+                this.setState({fullData: this.tempData}, ()=>  console.log);
                 this.setData('s2');
             });
 
@@ -107,15 +75,15 @@ export default class Graph extends PureComponent {
 
     render() {
         return (
-            <div>
-                <h1>The selected setting is {this.state.setting !== '' ? this.state.setting.toUpperCase() : 'S2'} </h1>
+            <div className="graphContainer">
                 <div className='menus'>
                     <div className='drop'>
                         <Dropdown options={settingsList} onChange={this.onSelectSetting} value={this.state.setting}
                                   placeholder="Select a setting" className='dropdown'/>
                     </div>
                 </div>
-                <div className='graph'>
+                <div className='graphSensor'>
+                    <h1>The selected setting is {this.state.setting !== '' ? this.state.setting.toUpperCase() : 'S2'} </h1>
                     <ResponsiveContainer>
                         <AreaChart
                             data={this.state.filteredData}
@@ -126,7 +94,15 @@ export default class Graph extends PureComponent {
                             <CartesianGrid strokeDasharray="3 3"/>
                             <XAxis dataKey="date" hide={true}/>
                             <YAxis/>
-                            <Tooltip content={<CustomTooltip style={{backgroundColor: 'red'}} name="Value"/>}/>
+                            <Tooltip
+                                labelStyle={{ color: "#676767" }}
+                                itemStyle={{ fontWeight: "bold", color:"black" }}
+                                formatter={function(value) {
+                                return value;
+                            }}
+                                                   labelFormatter={function(value) {
+                                                       return  value;
+                                                   }}/>/>}
                             <Area type="monotone" dataKey="value" stroke={coloursList[this.state.setting]}
                                   fill={coloursList[this.state.setting]}/>
                         </AreaChart>
