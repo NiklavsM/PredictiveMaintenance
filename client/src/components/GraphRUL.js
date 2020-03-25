@@ -1,10 +1,6 @@
 import React, {PureComponent} from 'react';
-import {
-    AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-} from 'recharts';
 import 'react-dropdown/style.css'
 import '../style.css';
-import {dates} from '../resources/dates';
 import axios from "axios";
 import Graph from './Graph';
 
@@ -32,13 +28,13 @@ export default class GraphRUL extends PureComponent {
         let filteredObject = '';
         this.state.fullData.forEach((obj, i) => {
             filteredObject = {
-                date: dates[i],
-                rul: obj[0],
+                date: this.getTime(i),
+                RUL: obj[0],
             };
             tempData.push(filteredObject);
         });
         this.setState({filteredData: tempData});
-    }
+    };
 
 
     getData = () => {
@@ -57,12 +53,19 @@ export default class GraphRUL extends PureComponent {
 
     };
 
+    getTime = (i) => {
+        let date = new Date();
+        date.setMilliseconds(i * 10000);
+        let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        return time;
+    };
+
 
     render() {
         return (
             <div className="graphContainer">
                 <div className='graphRUL'>
-                    <h1>The RUL processed values</h1>
+                    <h1>Remaining Useful Lifetime (RUL)</h1>
                     <Graph data={this.state.filteredData} setting="none"/>
                 </div>
             </div>

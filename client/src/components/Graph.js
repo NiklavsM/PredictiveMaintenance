@@ -28,7 +28,7 @@ const Graph  = props => (
                                 labelFormatter={function(value) {
                                     return  value;
                                 }}/>/>}
-                            <Area type="monotone" dataKey={props.setting!== 'none'?"value":"rul"} stroke={props.settings!== 'none'? coloursList[props.setting]: coloursList['rul']}
+                            <Area type="monotone" dataKey={props.setting!== 'none'?"value":"RUL"} stroke={props.settings!== 'none'? coloursList[props.setting]: coloursList['rul']}
                                   fill={props.settings!== 'none'? coloursList[props.setting]: coloursList['rul']}/>
                         </AreaChart>
                     </ResponsiveContainer>
