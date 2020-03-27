@@ -5,7 +5,7 @@ import '../style.css';
 import Graph from './Graph.js'
 
 import moment from 'moment';
-import {settingsList} from "../resources/ValuesLists";
+import {settingsList, coloursList} from "../resources/ValuesLists";
 import axios from "axios";
 
 export default class GraphSensors extends PureComponent {
@@ -43,7 +43,7 @@ export default class GraphSensors extends PureComponent {
         });
         this.setState({filteredData: tempData});
 
-    };
+    }
 
 
     onSelectSetting = (e) => {
@@ -74,9 +74,9 @@ export default class GraphSensors extends PureComponent {
                     </div>
                 </div>
                 <div className='graphSensor'>
-                    <h1>The selected setting
-                        is {this.state.setting !== '' ? this.state.setting.toUpperCase() : 'S2'} </h1>
+                    <h1>The selected setting is {this.state.setting !== '' ? this.state.setting.toUpperCase() : 'S2'} </h1>
                     <Graph data={this.state.filteredData} setting={this.state.setting}/>
+                    <span style={{color: '#ebebeb'}}>date</span>
                 </div>
             </div>
         );
