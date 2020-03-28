@@ -8,7 +8,7 @@
 
 .menus {
   margin: 2.3vw auto 0;
-
+  width: 65%;
 }
 
 .Dropdown-control {
@@ -22,7 +22,7 @@
   margin: 2.3vw auto 0;
 }
 
-.graphRUL{
+.graphRUL, .graphSensor{
   margin-top: 15.5vh;
 }
 
@@ -33,8 +33,8 @@
 
 .drop{
   width: 30vw;
-  display: inline-block;
   font-weight: bold;
+  position: absolute;
 }
 
 h1 {

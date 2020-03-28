@@ -18,7 +18,7 @@ const Graph = props => (
         >
             <CartesianGrid strokeDasharray="3 3"/>
             <XAxis dataKey="date" hide={true}/>
-            <YAxis label={<Text x={0} y={0} dx={11} dy={170} offset={0} angle={-90} fill='#ebebeb'>
+            <YAxis label={<Text x={0} y={0} dx={11} dy={170} offset={0} angle={-90} fill='#d82939'>
                 {props.setting !== 'none' ? "Setting value" : "RUL in cycles"}</Text>}/>
             <Tooltip
                 labelStyle={{color: "#676767"}}
