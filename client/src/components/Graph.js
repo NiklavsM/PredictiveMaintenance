@@ -12,7 +12,6 @@ const Graph = props => (
     <ResponsiveContainer>
         <AreaChart
             data={props.data}
-            isAnimationActive={false}
             margin={{
                 top: 10, right: 50, left: 0, bottom: 10,
             }}
@@ -30,7 +29,7 @@ const Graph = props => (
                 labelFormatter={function (value) {
                     return value;
                 }}/>/>}
-            <Area type="monotone" dataKey={props.setting !== 'none' ? "value" : "rul"}
+            <Area isAnimationActive={false} type="monotone" dataKey={props.setting !== 'none' ? "value" : "rul"}
                   stroke={props.settings !== 'none' ? coloursList[props.setting] : coloursList['rul']}
                   fill={props.settings !== 'none' ? coloursList[props.setting] : coloursList['rul']}/>
         </AreaChart>
