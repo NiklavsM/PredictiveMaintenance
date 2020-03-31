@@ -5,7 +5,7 @@ import '../style.css';
 import Graph from './Graph.js'
 
 import moment from 'moment';
-import {settingsList} from "../resources/ValuesLists";
+import {settingsList, coloursList} from "../resources/ValuesLists";
 import axios from "axios";
 
 export default class GraphSensors extends PureComponent {
@@ -77,6 +77,7 @@ export default class GraphSensors extends PureComponent {
                     <h1>The selected setting
                         is {this.state.setting !== '' ? this.state.setting.toUpperCase() : 'S2'} </h1>
                     <Graph data={this.state.filteredData} setting={this.state.setting}/>
+                    <span style={{color: '#ffffff'}}>Time</span>
                 </div>
             </div>
         );
