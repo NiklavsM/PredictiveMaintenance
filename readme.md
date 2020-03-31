@@ -1,6 +1,6 @@
-#Deployment instructions
+# Deployment instructions
 
-##System Requirements
+## System requirements
 
 * Docker installed
 * Maven installed
