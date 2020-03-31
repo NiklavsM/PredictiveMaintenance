@@ -67,7 +67,7 @@ export default class GraphRUL extends PureComponent {
                 <div className='graphRUL'>
                     <h1>Remaining Useful Lifetime (RUL)</h1>
                     <Graph className="graph" data={this.state.filteredData} setting="none"/>
-                    <span style={{color: '#d82939'}}>Time</span>
+                    <span style={{color: '#ffffff'}}>Time</span>
                 </div>
             </div>
         );

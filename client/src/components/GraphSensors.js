@@ -77,7 +77,7 @@ export default class GraphSensors extends PureComponent {
                     <h1>The selected setting
                         is {this.state.setting !== '' ? this.state.setting.toUpperCase() : 'S2'} </h1>
                     <Graph data={this.state.filteredData} setting={this.state.setting}/>
-                    <span style={{color: '#d82939'}}>Time</span>
+                    <span style={{color: '#ffffff'}}>Time</span>
                 </div>
             </div>
         );
